@@ -1,0 +1,5 @@
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_DAL\bin\Debug\QuanLyThuVien_DAL.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_DAL\bin\Debug\QuanLyThuVien_DAL.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_DAL\obj\Debug\QuanLyThuVien_DAL.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_DAL\obj\Debug\QuanLyThuVien_DAL.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_DAL\bin\Debug\QuanLyThuVien_DAL.dll.config

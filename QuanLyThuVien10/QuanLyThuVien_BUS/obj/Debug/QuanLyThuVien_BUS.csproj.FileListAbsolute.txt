@@ -1,0 +1,4 @@
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_BUS.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_BUS.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.pdb
