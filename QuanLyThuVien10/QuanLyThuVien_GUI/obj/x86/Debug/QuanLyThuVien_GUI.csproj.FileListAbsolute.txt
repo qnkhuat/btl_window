@@ -3,6 +3,15 @@ C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debu
 C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.dangNhap_GUI.resources
 C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.Properties.Resources.resources
 C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.trangChu_GUI.resources
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.traSach_GUI.resources
 C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.csproj.GenerateResource.Cache
 C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.exe
 C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.muonSach_GUI.resources
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.csprojResolveAssemblyReference.cache
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\QuanLyThuVien_BUS.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\QuanLyThuVien_DAL.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\QuanLyThuVien_DTO.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\QuanLyThuVien_BUS.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\QuanLyThuVien_DAL.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\QuanLyThuVien_DTO.pdb

@@ -34,6 +34,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.ntmuonsach = new System.Windows.Forms.Button();
+            this.bttrasach = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -90,11 +92,33 @@
             this.button6.Text = "Nhân viên";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // ntmuonsach
+            // 
+            this.ntmuonsach.Location = new System.Drawing.Point(665, 16);
+            this.ntmuonsach.Name = "ntmuonsach";
+            this.ntmuonsach.Size = new System.Drawing.Size(75, 23);
+            this.ntmuonsach.TabIndex = 7;
+            this.ntmuonsach.Text = "Mượn sách";
+            this.ntmuonsach.UseVisualStyleBackColor = true;
+            this.ntmuonsach.Click += new System.EventHandler(this.ntmuonsach_Click);
+            // 
+            // bttrasach
+            // 
+            this.bttrasach.Location = new System.Drawing.Point(746, 16);
+            this.bttrasach.Name = "bttrasach";
+            this.bttrasach.Size = new System.Drawing.Size(75, 23);
+            this.bttrasach.TabIndex = 8;
+            this.bttrasach.Text = "Trả sách";
+            this.bttrasach.UseVisualStyleBackColor = true;
+            this.bttrasach.Click += new System.EventHandler(this.bttrasach_Click);
+            // 
             // trangChu_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 523);
+            this.Controls.Add(this.bttrasach);
+            this.Controls.Add(this.ntmuonsach);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -116,5 +140,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button ntmuonsach;
+        private System.Windows.Forms.Button bttrasach;
     }
 }
