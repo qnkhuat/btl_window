@@ -128,6 +128,7 @@
             this.IsMdiContainer = true;
             this.Name = "trangChu_GUI";
             this.Text = "trangChu_GUI";
+            this.Load += new System.EventHandler(this.trangChu_GUI_Load);
             this.ResumeLayout(false);
 
         }

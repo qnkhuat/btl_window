@@ -75,6 +75,9 @@ namespace QuanLyThuVien_GUI
             }
         }
 
+        private void trangChu_GUI_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -59,6 +59,12 @@
       <DependentUpon>muonSach_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyTheLoai_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTheLoai_GUI.Designer.cs">
+      <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="runQLTV_GUI.cs" />
     <Compile Include="trangChu_GUI.cs">
       <SubType>Form</SubType>
@@ -87,6 +93,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLyTheLoai_GUI.resx">
+      <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="trangChu_GUI.resx">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </EmbeddedResource>
