@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dgvQuanLyTheLoai = new System.Windows.Forms.DataGridView();
+            this.maThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,11 +45,8 @@
             this.btnTim = new System.Windows.Forms.Button();
             this.btnXem = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.cbTim = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.maThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtTim = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyTheLoai)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +62,25 @@
             this.dgvQuanLyTheLoai.Size = new System.Drawing.Size(342, 150);
             this.dgvQuanLyTheLoai.TabIndex = 0;
             this.dgvQuanLyTheLoai.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanLyTheLoai_CellContentClick);
+            this.dgvQuanLyTheLoai.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanLyTheLoai_RowEnter);
+            // 
+            // maThL
+            // 
+            this.maThL.DataPropertyName = "maThL";
+            this.maThL.HeaderText = "Mã Thể Loại";
+            this.maThL.Name = "maThL";
+            // 
+            // tenThL
+            // 
+            this.tenThL.DataPropertyName = "tenThL";
+            this.tenThL.HeaderText = "Tên Thể Loại";
+            this.tenThL.Name = "tenThL";
+            // 
+            // ghiChu
+            // 
+            this.ghiChu.DataPropertyName = "ghiChu";
+            this.ghiChu.HeaderText = "Ghi Chú";
+            this.ghiChu.Name = "ghiChu";
             // 
             // label1
             // 
@@ -149,15 +168,18 @@
             this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnTim
             // 
-            this.btnTim.Location = new System.Drawing.Point(429, 231);
+            this.btnTim.Image = global::QuanLyThuVien_GUI.Properties.Resources.timkiem;
+            this.btnTim.Location = new System.Drawing.Point(422, 231);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(75, 23);
+            this.btnTim.Size = new System.Drawing.Size(83, 44);
             this.btnTim.TabIndex = 11;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // btnXem
             // 
@@ -167,6 +189,7 @@
             this.btnXem.TabIndex = 12;
             this.btnXem.Text = "Xem";
             this.btnXem.UseVisualStyleBackColor = true;
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // btnThoat
             // 
@@ -176,14 +199,7 @@
             this.btnThoat.TabIndex = 13;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
-            // 
-            // cbTim
-            // 
-            this.cbTim.FormattingEnabled = true;
-            this.cbTim.Location = new System.Drawing.Point(512, 231);
-            this.cbTim.Name = "cbTim";
-            this.cbTim.Size = new System.Drawing.Size(121, 21);
-            this.cbTim.TabIndex = 14;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label4
             // 
@@ -192,36 +208,25 @@
             this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label4.Location = new System.Drawing.Point(253, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 21);
+            this.label4.Size = new System.Drawing.Size(170, 21);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Quản Lý Thư Viện";
+            this.label4.Text = "Quản Lý Thể Loại";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // maThL
+            // txtTim
             // 
-            this.maThL.DataPropertyName = "maThL";
-            this.maThL.HeaderText = "Mã Thể Loại";
-            this.maThL.Name = "maThL";
-            // 
-            // tenThL
-            // 
-            this.tenThL.DataPropertyName = "tenThL";
-            this.tenThL.HeaderText = "Tên Thể Loại";
-            this.tenThL.Name = "tenThL";
-            // 
-            // ghiChu
-            // 
-            this.ghiChu.DataPropertyName = "ghiChu";
-            this.ghiChu.HeaderText = "Ghi Chú";
-            this.ghiChu.Name = "ghiChu";
+            this.txtTim.Location = new System.Drawing.Point(526, 231);
+            this.txtTim.Name = "txtTim";
+            this.txtTim.Size = new System.Drawing.Size(100, 20);
+            this.txtTim.TabIndex = 16;
             // 
             // QuanLyTheLoai_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 393);
+            this.Controls.Add(this.txtTim);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cbTim);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXem);
             this.Controls.Add(this.btnTim);
@@ -261,10 +266,10 @@
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.ComboBox cbTim;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn maThL;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenThL;
         private System.Windows.Forms.DataGridViewTextBoxColumn ghiChu;
+        private System.Windows.Forms.TextBox txtTim;
     }
 }

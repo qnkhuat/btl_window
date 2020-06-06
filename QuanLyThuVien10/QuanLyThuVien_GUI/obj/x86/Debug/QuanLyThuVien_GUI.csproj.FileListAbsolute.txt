@@ -36,3 +36,4 @@ C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debu
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.csproj.CopyComplete
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.exe
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.pdb
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.QuanLyTaiLieu_GUI.resources

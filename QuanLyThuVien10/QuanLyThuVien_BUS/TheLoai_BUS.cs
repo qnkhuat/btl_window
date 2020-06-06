@@ -40,8 +40,15 @@ namespace QuanLyThuVien_BUS
         }
         public void UpdateTheLoai(string ma,string ten,string gc)
         {
-            string sql = "update TheLoai10 set tenThL=N'" + ten + "',ghiChu=N'" + gc + "' where maThL=N'" + ma + "')";
+            string sql = "update TheLoai10 set tenThL=N'" + ten + "',ghiChu=N'" + gc + "' where maThL=N'" + ma + "'";
             da.ExcuteNonQuery(sql);
+        }
+        public DataTable SearchTheLoai(string ma)
+        {
+            string sql = "select * from TheLoai10 where maThL='" + ma + "'";
+            DataTable dt = new DataTable();
+            dt = da.GetTable(sql);
+            return dt;
         }
     }
 }
