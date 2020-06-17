@@ -5,7 +5,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using QuanLyThuVien_BUS;
 using QuanLyThuVien_DAL;
@@ -102,14 +104,16 @@ namespace QuanLyThuVien_GUI
                         MessageBox.Show("Mã Tài liệu đã tồn tại, nhập lại", "cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
+                
             }
             catch(Exception)
 
             {
                 MessageBox.Show("không thêm được tài liệu, thử lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
-
+        
         private void btnSua_Click(object sender, EventArgs e)
         {
             try
@@ -204,7 +208,7 @@ namespace QuanLyThuVien_GUI
            
             
         }
-
+        
         private void QuanLyTaiLieu_GUI_Load(object sender, EventArgs e)
         {
             LoadData();

@@ -11,6 +11,8 @@ namespace QuanLyThuVien_DAL
         public SqlConnection getConnect()
         {
             return new SqlConnection(@"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=Quan_Ly_Thu_Vien;Integrated Security=True");
+            
+
         }
         public DataTable GetTable(string sql)
         {

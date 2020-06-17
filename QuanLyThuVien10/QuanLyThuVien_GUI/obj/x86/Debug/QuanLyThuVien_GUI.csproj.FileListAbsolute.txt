@@ -37,3 +37,14 @@ C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debu
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.exe
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.pdb
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.QuanLyTaiLieu_GUI.resources
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.ThongKeTop10TaiLieu_GUI.resources
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\QuanLyThuVien_BUS.dll.config
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.Report.resources
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\RdlCompile.cache
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\RdlCompile.compiled
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\QuanLyThuVien_GUI.exe.config
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\Microsoft.SqlServer.Types.dll

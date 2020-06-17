@@ -4,7 +4,6 @@ C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debu
 C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.pdb
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\bin\Debug\QuanLyThuVien_DTO.dll
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\bin\Debug\QuanLyThuVien_DTO.pdb
-C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.dll
 C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.pdb

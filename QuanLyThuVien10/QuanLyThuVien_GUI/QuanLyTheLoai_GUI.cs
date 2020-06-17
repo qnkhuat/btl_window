@@ -172,6 +172,11 @@ namespace QuanLyThuVien_GUI
             txtGhiChu.Text = dgvQuanLyTheLoai.Rows[dong].Cells[2].Value.ToString();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dgvQuanLyTheLoai_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

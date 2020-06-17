@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyTaiLieu_GUI));
             this.dgvQuanLyTaiLieu = new System.Windows.Forms.DataGridView();
             this.maTL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenTL = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -157,7 +158,6 @@
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Số Lượng";
-           
             // 
             // label5
             // 
@@ -185,7 +185,6 @@
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Tác Giả";
-            
             // 
             // label8
             // 
@@ -211,53 +210,56 @@
             // 
             this.txtMaTL.Location = new System.Drawing.Point(118, 66);
             this.txtMaTL.Name = "txtMaTL";
-            this.txtMaTL.Size = new System.Drawing.Size(100, 20);
+            this.txtMaTL.Size = new System.Drawing.Size(121, 20);
             this.txtMaTL.TabIndex = 10;
             // 
             // txtTenTL
             // 
             this.txtTenTL.Location = new System.Drawing.Point(118, 103);
             this.txtTenTL.Name = "txtTenTL";
-            this.txtTenTL.Size = new System.Drawing.Size(100, 20);
+            this.txtTenTL.Size = new System.Drawing.Size(121, 20);
             this.txtTenTL.TabIndex = 11;
             // 
             // txtSL
             // 
-            this.txtSL.Location = new System.Drawing.Point(118, 174);
+            this.txtSL.Location = new System.Drawing.Point(118, 163);
             this.txtSL.Name = "txtSL";
-            this.txtSL.Size = new System.Drawing.Size(100, 20);
+            this.txtSL.Size = new System.Drawing.Size(121, 20);
             this.txtSL.TabIndex = 12;
             // 
             // txtNhaXB
             // 
             this.txtNhaXB.Location = new System.Drawing.Point(404, 83);
             this.txtNhaXB.Name = "txtNhaXB";
-            this.txtNhaXB.Size = new System.Drawing.Size(100, 20);
+            this.txtNhaXB.Size = new System.Drawing.Size(117, 20);
             this.txtNhaXB.TabIndex = 13;
             // 
             // txtNamXB
             // 
             this.txtNamXB.Location = new System.Drawing.Point(404, 126);
             this.txtNamXB.Name = "txtNamXB";
-            this.txtNamXB.Size = new System.Drawing.Size(100, 20);
+            this.txtNamXB.Size = new System.Drawing.Size(117, 20);
             this.txtNamXB.TabIndex = 14;
             // 
             // txtTG
             // 
             this.txtTG.Location = new System.Drawing.Point(405, 163);
             this.txtTG.Name = "txtTG";
-            this.txtTG.Size = new System.Drawing.Size(100, 20);
+            this.txtTG.Size = new System.Drawing.Size(116, 20);
             this.txtTG.TabIndex = 15;
             // 
             // btnNhapLai
             // 
             this.btnNhapLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapLai.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnNhapLai.Location = new System.Drawing.Point(26, 230);
+            this.btnNhapLai.Image = ((System.Drawing.Image)(resources.GetObject("btnNhapLai.Image")));
+            this.btnNhapLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhapLai.Location = new System.Drawing.Point(23, 214);
             this.btnNhapLai.Name = "btnNhapLai";
-            this.btnNhapLai.Size = new System.Drawing.Size(86, 23);
+            this.btnNhapLai.Size = new System.Drawing.Size(103, 40);
             this.btnNhapLai.TabIndex = 16;
             this.btnNhapLai.Text = "Nhập Lại";
+            this.btnNhapLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNhapLai.UseVisualStyleBackColor = true;
             this.btnNhapLai.Click += new System.EventHandler(this.btnNhapLai_Click);
             // 
@@ -265,11 +267,14 @@
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnThem.Location = new System.Drawing.Point(143, 231);
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(143, 214);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
+            this.btnThem.Size = new System.Drawing.Size(75, 40);
             this.btnThem.TabIndex = 17;
             this.btnThem.Text = "Thêm";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -277,11 +282,14 @@
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSua.Location = new System.Drawing.Point(254, 231);
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(254, 214);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
+            this.btnSua.Size = new System.Drawing.Size(75, 40);
             this.btnSua.TabIndex = 18;
             this.btnSua.Text = "Sửa";
+            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
@@ -289,11 +297,14 @@
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnXoa.Location = new System.Drawing.Point(357, 229);
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(357, 214);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.Size = new System.Drawing.Size(75, 38);
             this.btnXoa.TabIndex = 19;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -301,11 +312,14 @@
             // 
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTim.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnTim.Location = new System.Drawing.Point(514, 230);
+            this.btnTim.Image = ((System.Drawing.Image)(resources.GetObject("btnTim.Image")));
+            this.btnTim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTim.Location = new System.Drawing.Point(514, 214);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(75, 23);
+            this.btnTim.Size = new System.Drawing.Size(75, 39);
             this.btnTim.TabIndex = 20;
             this.btnTim.Text = "Tìm";
+            this.btnTim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTim.UseVisualStyleBackColor = true;
             this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
@@ -313,11 +327,14 @@
             // 
             this.btnXem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXem.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnXem.Location = new System.Drawing.Point(605, 61);
+            this.btnXem.Image = ((System.Drawing.Image)(resources.GetObject("btnXem.Image")));
+            this.btnXem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXem.Location = new System.Drawing.Point(605, 59);
             this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(75, 23);
+            this.btnXem.Size = new System.Drawing.Size(75, 40);
             this.btnXem.TabIndex = 21;
             this.btnXem.Text = "Xem";
+            this.btnXem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXem.UseVisualStyleBackColor = true;
             this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
@@ -334,11 +351,14 @@
             // 
             this.btThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThoat.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btThoat.Image = ((System.Drawing.Image)(resources.GetObject("btThoat.Image")));
+            this.btThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btThoat.Location = new System.Drawing.Point(605, 119);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(75, 23);
+            this.btThoat.Size = new System.Drawing.Size(85, 41);
             this.btThoat.TabIndex = 24;
             this.btThoat.Text = "Thoát";
+            this.btThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btThoat.UseVisualStyleBackColor = true;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
@@ -346,13 +366,14 @@
             // 
             this.txtTim.Location = new System.Drawing.Point(605, 231);
             this.txtTim.Name = "txtTim";
-            this.txtTim.Size = new System.Drawing.Size(100, 20);
+            this.txtTim.Size = new System.Drawing.Size(116, 20);
             this.txtTim.TabIndex = 25;
             // 
             // QuanLyTaiLieu_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtTim);
             this.Controls.Add(this.btThoat);
@@ -379,6 +400,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvQuanLyTaiLieu);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "QuanLyTaiLieu_GUI";
             this.Text = "QuanLyTaiLieu_GUI";
             this.Load += new System.EventHandler(this.QuanLyTaiLieu_GUI_Load);

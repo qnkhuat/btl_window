@@ -34,6 +34,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Design.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,7 +95,19 @@
     <Compile Include="QuanLyTheLoai_GUI.Designer.cs">
       <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="runQLTV_GUI.cs" />
+    <Compile Include="ThongKeTop10TaiLieu_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeTop10TaiLieu_GUI.Designer.cs">
+      <DependentUpon>ThongKeTop10TaiLieu_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="trangChu_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,12 +142,33 @@
     <EmbeddedResource Include="QuanLyTheLoai_GUI.resx">
       <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.rdlc" />
+    <EmbeddedResource Include="ThongKeTop10TaiLieu_GUI.resx">
+      <DependentUpon>ThongKeTop10TaiLieu_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="trangChu_GUI.resx">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="traSach_GUI.resx">
       <DependentUpon>traSach_GUI.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\dangNhap_GUI.datasource" />
+    <None Include="Properties\DataSources\muonSach_GUI.datasource" />
+    <None Include="Properties\DataSources\QuanLyTaiLieu_GUI.datasource" />
+    <None Include="Properties\DataSources\QuanLyTheLoai_GUI.datasource" />
+    <None Include="Properties\DataSources\QuanLyThuVien_GUI.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\QuanLyThuVien_GUI.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Report.datasource" />
+    <None Include="Properties\DataSources\runQLTV_GUI.datasource" />
+    <None Include="Properties\DataSources\ThongKe.datasource" />
+    <None Include="Properties\DataSources\ThongKeTop10TaiLieu_GUI.datasource" />
+    <None Include="Properties\DataSources\trangChu_GUI.datasource" />
+    <None Include="Properties\DataSources\traSach_GUI.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -138,6 +195,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\timkiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\clean.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\organization.png" />
+    <Content Include="Resources\reset %281%29.png" />
+    <Content Include="Resources\reset %285%29.png" />
+    <Content Include="Resources\reset.png" />
+    <Content Include="Resources\see.png" />
+    <Content Include="Resources\seen.png" />
+    <Content Include="Resources\settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
