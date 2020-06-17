@@ -11,7 +11,8 @@
     <RootNamespace>QuanLyThuVien_GUI</RootNamespace>
     <AssemblyName>QuanLyThuVien_GUI</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,8 +35,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,17 +73,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dangNhap_GUI.cs">
+    <Compile Include="BAO\dangNhap_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dangNhap_GUI.Designer.cs">
+    <Compile Include="BAO\dangNhap_GUI.Designer.cs">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="muonSach_GUI.cs">
+    <Compile Include="BAO\DataSetPhieuMuon.cs">
+      <DependentUpon>DataSetPhieuMuon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAO\DataSetPhieuMuon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPhieuMuon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAO\muonSach_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="muonSach_GUI.Designer.cs">
+    <Compile Include="BAO\muonSach_GUI.Designer.cs">
       <DependentUpon>muonSach_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAO\PrintPM_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAO\PrintPM_GUI.Designer.cs">
+      <DependentUpon>PrintPM_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrRpPhieuMuon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrRpPhieuMuon.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyTheLoai_GUI.cs">
@@ -66,23 +113,37 @@
       <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="runQLTV_GUI.cs" />
-    <Compile Include="trangChu_GUI.cs">
+    <Compile Include="BAO\ThemTLvaoPM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="trangChu_GUI.Designer.cs">
+    <Compile Include="BAO\ThemTLvaoPM.Designer.cs">
+      <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAO\trangChu_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAO\trangChu_GUI.Designer.cs">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="traSach_GUI.cs">
+    <Compile Include="BAO\traSach_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="traSach_GUI.Designer.cs">
+    <Compile Include="BAO\traSach_GUI.Designer.cs">
       <DependentUpon>traSach_GUI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="dangNhap_GUI.resx">
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="BAO\dangNhap_GUI.resx">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="muonSach_GUI.resx">
+    <EmbeddedResource Include="BAO\muonSach_GUI.resx">
       <DependentUpon>muonSach_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAO\PrintPM_GUI.resx">
+      <DependentUpon>PrintPM_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrRpPhieuMuon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrRpPhieuMuon.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,16 +153,33 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QuanLyTheLoai_GUI.resx">
       <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="trangChu_GUI.resx">
+    <EmbeddedResource Include="BAO\ThemTLvaoPM.resx">
+      <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAO\trangChu_GUI.resx">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="traSach_GUI.resx">
+    <EmbeddedResource Include="BAO\traSach_GUI.resx">
       <DependentUpon>traSach_GUI.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="BAO\DataSetPhieuMuon.xsc">
+      <DependentUpon>DataSetPhieuMuon.xsd</DependentUpon>
+    </None>
+    <None Include="BAO\DataSetPhieuMuon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPhieuMuon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BAO\DataSetPhieuMuon.xss">
+      <DependentUpon>DataSetPhieuMuon.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +203,24 @@
       <Project>{990F7825-6564-49A9-948B-FDA69C7C8083}</Project>
       <Name>QuanLyThuVien_DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
