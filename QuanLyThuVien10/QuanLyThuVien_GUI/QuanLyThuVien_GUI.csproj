@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuanLyThuVien_GUI</RootNamespace>
     <AssemblyName>QuanLyThuVien_GUI</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -33,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
@@ -79,19 +81,19 @@
     <Compile Include="BAO\dangNhap_GUI.Designer.cs">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="BAO\DataSetPhieuMuon.cs">
-      <DependentUpon>DataSetPhieuMuon.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BAO\DataSetPhieuMuon.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetPhieuMuon.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BAO\muonSach_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BAO\muonSach_GUI.Designer.cs">
       <DependentUpon>muonSach_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAO\PMvPMCTdataset.cs">
+      <DependentUpon>PMvPMCTdataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BAO\PMvPMCTdataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMvPMCTdataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="BAO\PrintPM_GUI.cs">
       <SubType>Form</SubType>
@@ -99,10 +101,10 @@
     <Compile Include="BAO\PrintPM_GUI.Designer.cs">
       <DependentUpon>PrintPM_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrRpPhieuMuon.cs">
+    <Compile Include="BAO\rptPMvPMCt.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrRpPhieuMuon.rpt</DependentUpon>
+      <DependentUpon>rptPMvPMCt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,9 +143,9 @@
     <EmbeddedResource Include="BAO\PrintPM_GUI.resx">
       <DependentUpon>PrintPM_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrRpPhieuMuon.rpt">
+    <EmbeddedResource Include="BAO\rptPMvPMCt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrRpPhieuMuon.cs</LastGenOutput>
+      <LastGenOutput>rptPMvPMCt.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -168,16 +170,16 @@
       <DependentUpon>traSach_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="BAO\DataSetPhieuMuon.xsc">
-      <DependentUpon>DataSetPhieuMuon.xsd</DependentUpon>
+    <None Include="BAO\PMvPMCTdataset.xsc">
+      <DependentUpon>PMvPMCTdataset.xsd</DependentUpon>
     </None>
-    <None Include="BAO\DataSetPhieuMuon.xsd">
+    <None Include="BAO\PMvPMCTdataset.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetPhieuMuon.Designer.cs</LastGenOutput>
+      <LastGenOutput>PMvPMCTdataset.Designer.cs</LastGenOutput>
     </None>
-    <None Include="BAO\DataSetPhieuMuon.xss">
-      <DependentUpon>DataSetPhieuMuon.xsd</DependentUpon>
+    <None Include="BAO\PMvPMCTdataset.xss">
+      <DependentUpon>PMvPMCTdataset.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

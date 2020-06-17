@@ -19,11 +19,7 @@ namespace QuanLyThuVien_GUI.BAO
         ReportPM_BUS rppm = new ReportPM_BUS();
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
-            CrRpPhieuMuon crpm = new CrRpPhieuMuon();
-            DataSet tbpm = rppm.getReportPM(ThemTLvaoPM.mapm);
-            crpm.SetDataSource(tbpm.Tables[0]);
-            crrpview.ReportSource = crpm;
-            crrpview.RefreshReport();
+           
         }
     }
 }

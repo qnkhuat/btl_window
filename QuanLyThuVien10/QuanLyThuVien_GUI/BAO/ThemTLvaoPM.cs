@@ -1,4 +1,6 @@
-﻿using QuanLyThuVien_BUS;
+﻿using Microsoft.Reporting.WinForms;
+using QuanLyThuVien_BUS;
+using QuanLyThuVien_BUS.BAO;
 using QuanLyThuVien_DTO;
 using QuanLyThuVien_GUI.BAO;
 using System;
@@ -202,11 +204,44 @@ namespace QuanLyThuVien_GUI
             txtsl.Text = "";
         }
 
+
+        ReportPM_BUS rppm = new ReportPM_BUS();
         private void btIn_Click(object sender, EventArgs e)
         {
-            PrintPM_GUI prpm = new PrintPM_GUI();
-            prpm.Show();
+            //Kết xuất nguồn dữ liệu cho report
+            rptPMvPMCt baocao = new rptPMvPMCt();
+            baocao.SetDataSource(rppm.getReportPM(muonSach_GUI.pm.MaPM));
+            //Hiển Thị Dữ Liệu
+            PrintPM_GUI prf = new PrintPM_GUI();
+            prf.reportViewer1.ReportSource = baocao;
+            prf.ShowDialog();
+        }
+    }
+    class thongKe 
+    {
+        String maPM;
+        String maDG;
+        DateTime ngayMuon;
+        String maNV;
+        String maTL;
+        int slMuon;
+        DateTime ngayTra;
+
+        public thongKe(string maPM, string maDG, DateTime ngayMuon, string maNV, string maTL, int slMuon, DateTime ngayTra)
+        {
+            this.maPM = maPM;
+            this.maDG = maDG;
+            this.ngayMuon = ngayMuon;
+            this.maNV = maNV;
+            this.maTL = maTL;
+            this.slMuon = slMuon;
+            this.ngayTra = ngayTra;
+        }
+
+        public thongKe()
+        {
         }
 
     }
+
 }

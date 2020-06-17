@@ -107,13 +107,12 @@ namespace QuanLyThuVien_GUI
                                 }
                                 else
                                 {
-                                    DateTime str = DateTime.Now;
-                                    pm=new phieuMuon(txtmapm.Text, txtmadg.Text, str, txtmanv.Text);
-                                    dataMuon.addPhieuMuon(new phieuMuon(muonSach_GUI.pm.MaPM, muonSach_GUI.pm.MaDG, DateTime.Now, muonSach_GUI.pm.MaNV));
+                                    DateTime str = DateTime.Today.Date;
+                                    pm =new phieuMuon(txtmapm.Text, txtmadg.Text, str, txtmanv.Text);
+                                    dataMuon.addPhieuMuon(new phieuMuon(muonSach_GUI.pm.MaPM, muonSach_GUI.pm.MaDG, str.Date, muonSach_GUI.pm.MaNV));
                                     ThemTLvaoPM ms = new ThemTLvaoPM();
                                     ms.MdiParent = this.ParentForm;
                                     ms.Show();
-                                
                                     DataTable datb = dataMuon.getPhieuMuonTheoMa(muonSach_GUI.pm.MaPM);
                                 if (!(datb.Rows.Count == 0))
                                 {
