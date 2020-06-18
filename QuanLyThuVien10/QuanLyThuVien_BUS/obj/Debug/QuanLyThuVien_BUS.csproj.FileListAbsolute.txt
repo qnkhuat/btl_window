@@ -1,0 +1,33 @@
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_BUS.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_BUS.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.csprojResolveAssemblyReference.cache
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DAL.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DTO.dll
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DAL.pdb
+C:\Users\vao12\OneDrive\Máy tính\C#\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DTO.pdb
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_BUS.dll
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_BUS.pdb
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DAL.dll
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DTO.dll
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DAL.pdb
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DAL.dll.config
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DTO.pdb
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.csproj.CopyComplete
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.dll
+C:\Users\Admin\Desktop\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.pdb
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_BUS.dll
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_BUS.pdb
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DAL.dll
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DTO.dll
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DAL.pdb
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DAL.dll.config
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\bin\Debug\QuanLyThuVien_DTO.pdb
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.csprojAssemblyReference.cache
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.csproj.CoreCompileInputs.cache
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.csproj.CopyComplete
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.dll
+C:\Users\vao12\OneDrive\Tài liệu\GitHub\btl_window\QuanLyThuVien10\QuanLyThuVien_BUS\obj\Debug\QuanLyThuVien_BUS.pdb
