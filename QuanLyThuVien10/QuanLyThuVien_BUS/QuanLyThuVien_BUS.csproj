@@ -33,7 +33,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+<<<<<<< HEAD
     <Reference Include="System.Data.Linq" />
+=======
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,12 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="BAO\MuonSach_BUS.cs" />
     <Compile Include="BAO\ReportPM_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BAO\taiKhoan_BUS.cs" />
     <Compile Include="TheLoai_BUS.cs" />
     <Compile Include="BAO\TraSach_BUS.cs" />
+=======
+    <Compile Include="BAO\dangNhap_BUS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="taiKhoan_BUS.cs" />
+    <Compile Include="TaiLieu_BUS.cs" />
+    <Compile Include="TheLoai_BUS.cs" />
+    <Compile Include="ThongKeTop10_BUS.cs" />
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuanLyThuVien_DAL\QuanLyThuVien_DAL.csproj">
@@ -57,6 +76,13 @@
       <Project>{990F7825-6564-49A9-948B-FDA69C7C8083}</Project>
       <Name>QuanLyThuVien_DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

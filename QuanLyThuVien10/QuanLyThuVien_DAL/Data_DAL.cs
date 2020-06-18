@@ -25,6 +25,7 @@ namespace QuanLyThuVien_DAL
             ad.Fill(dt);
             return (dt);
         }
+<<<<<<< HEAD
         //Lấy dữ liệu để duyệt
         public SqlDataReader getData(String sql)
         {
@@ -35,6 +36,8 @@ namespace QuanLyThuVien_DAL
             sdr=cmd.ExecuteReader();
             return sdr;      
         }
+=======
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
         //Update dữ liệu
         public void ExcuteNonQuery(String sql)
         {
@@ -50,6 +53,19 @@ namespace QuanLyThuVien_DAL
             con.Open();
             SqlDataAdapter ad = new SqlDataAdapter(sql, con);
             return ad;
+<<<<<<< HEAD
+=======
+        }
+        //Lấy dữ liệu để duyệt
+        public SqlDataReader getData(String sql)
+        {
+            SqlConnection con = getConnect();
+            SqlDataReader sdr = null;
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            sdr = cmd.ExecuteReader();
+            return sdr;
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
         }
     }
 }

@@ -47,7 +47,12 @@
     <Compile Include="BAO\phieuMuon.cs" />
     <Compile Include="BAO\phieuMuonChiTiet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="BAO\taiKhoan_DTO.cs" />
+=======
+    <Compile Include="taiKhoan_DTO.cs" />
+    <Compile Include="TaiLieu_DTO.cs" />
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
     <Compile Include="TheLoai_DTO.cs" />
   </ItemGroup>
   <ItemGroup>

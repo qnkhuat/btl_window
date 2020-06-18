@@ -131,6 +131,52 @@ namespace QuanLyThuVien_GUI
             }
         }
 
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult tl;
+            tl = (MessageBox.Show("Bạn có muốn xóa không?", "Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Question));
+            if(tl==DialogResult.Yes)
+             {
+                theloai.DeleteTheLoai(txtMa.Text.Trim());
+                MessageBox.Show("Xóa thành công!");
+                LoadData();
+            }
+        }
+
+        private void btnXem_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult tl = MessageBox.Show("Bạn muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (tl == DialogResult.Yes)
+                this.Dispose();
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            dtTimKiem = new DataTable();
+            dtTimKiem = theloai.SearchTheLoai(txtTim.Text.Trim());
+            dgvQuanLyTheLoai.DataSource = dtTimKiem;
+
+        }
+
+        private void dgvQuanLyTheLoai_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            int dong = e.RowIndex;
+            txtMa.Text = dgvQuanLyTheLoai.Rows[dong].Cells[0].Value.ToString();
+            txtTen.Text = dgvQuanLyTheLoai.Rows[dong].Cells[1].Value.ToString();
+            txtGhiChu.Text = dgvQuanLyTheLoai.Rows[dong].Cells[2].Value.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dgvQuanLyTheLoai_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

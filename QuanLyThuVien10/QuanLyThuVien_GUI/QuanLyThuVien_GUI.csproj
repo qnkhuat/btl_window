@@ -35,6 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+<<<<<<< HEAD
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
@@ -59,6 +60,36 @@
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+=======
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Design.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -108,14 +139,36 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyTaiLieu_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiLieu_GUI.Designer.cs">
+      <DependentUpon>QuanLyTaiLieu_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyTheLoai_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="QuanLyTheLoai_GUI.Designer.cs">
       <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="runQLTV_GUI.cs" />
+<<<<<<< HEAD
     <Compile Include="BAO\ThemTLvaoPM.cs">
+=======
+    <Compile Include="ThongKeTop10TaiLieu_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeTop10TaiLieu_GUI.Designer.cs">
+      <DependentUpon>ThongKeTop10TaiLieu_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trangChu_GUI.cs">
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BAO\ThemTLvaoPM.Designer.cs">
@@ -151,16 +204,32 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuanLyTaiLieu_GUI.resx">
+      <DependentUpon>QuanLyTaiLieu_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyTheLoai_GUI.resx">
       <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="BAO\ThemTLvaoPM.resx">
       <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.rdlc" />
+    <EmbeddedResource Include="ThongKeTop10TaiLieu_GUI.resx">
+      <DependentUpon>ThongKeTop10TaiLieu_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trangChu_GUI.resx">
+      <DependentUpon>trangChu_GUI.cs</DependentUpon>
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
     </EmbeddedResource>
     <EmbeddedResource Include="BAO\traSach_GUI.resx">
       <DependentUpon>traSach_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+<<<<<<< HEAD
     <None Include="BAO\PMvPMCTdataset.xsc">
       <DependentUpon>PMvPMCTdataset.xsd</DependentUpon>
     </None>
@@ -173,6 +242,21 @@
       <DependentUpon>PMvPMCTdataset.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+=======
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\dangNhap_GUI.datasource" />
+    <None Include="Properties\DataSources\muonSach_GUI.datasource" />
+    <None Include="Properties\DataSources\QuanLyTaiLieu_GUI.datasource" />
+    <None Include="Properties\DataSources\QuanLyTheLoai_GUI.datasource" />
+    <None Include="Properties\DataSources\QuanLyThuVien_GUI.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\QuanLyThuVien_GUI.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Report.datasource" />
+    <None Include="Properties\DataSources\runQLTV_GUI.datasource" />
+    <None Include="Properties\DataSources\ThongKe.datasource" />
+    <None Include="Properties\DataSources\ThongKeTop10TaiLieu_GUI.datasource" />
+    <None Include="Properties\DataSources\trangChu_GUI.datasource" />
+    <None Include="Properties\DataSources\traSach_GUI.datasource" />
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -198,6 +282,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
@@ -214,6 +299,23 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+=======
+    <None Include="Resources\timkiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\clean.png" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\organization.png" />
+    <Content Include="Resources\reset %281%29.png" />
+    <Content Include="Resources\reset %285%29.png" />
+    <Content Include="Resources\reset.png" />
+    <Content Include="Resources\see.png" />
+    <Content Include="Resources\seen.png" />
+    <Content Include="Resources\settings.png" />
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

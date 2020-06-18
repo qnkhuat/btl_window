@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace QuanLyThuVien_GUI
 {
@@ -17,6 +18,7 @@ namespace QuanLyThuVien_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             //Application.Run(new traSach_GUI());
             //Application.Run(new muonSach_GUI());
             Thread thread = new Thread(new ThreadStart(work));
@@ -31,6 +33,11 @@ namespace QuanLyThuVien_GUI
         public static void work2()
         {
             Application.Run(new muonSach_GUI());
+=======
+            Application.Run(new trangChu_GUI());
+            
+
+>>>>>>> 3bb1764584efddf9fa91f41580ca8d87d1bfb291
         }
     }
 }
