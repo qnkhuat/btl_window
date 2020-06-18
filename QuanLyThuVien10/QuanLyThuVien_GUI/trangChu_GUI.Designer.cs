@@ -28,103 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.ntmuonsach = new System.Windows.Forms.Button();
-            this.bttrasach = new System.Windows.Forms.Button();
+            this.btqltheloai = new System.Windows.Forms.Button();
+            this.btqltailieu = new System.Windows.Forms.Button();
+            this.btqldoituong = new System.Windows.Forms.Button();
+            this.btqldocgia = new System.Windows.Forms.Button();
+            this.btqlchucvu = new System.Windows.Forms.Button();
+            this.btqlnhanvien = new System.Windows.Forms.Button();
+            this.nbqlmuonsach = new System.Windows.Forms.Button();
+            this.btqltrasach = new System.Windows.Forms.Button();
+            this.bttop10tl = new System.Windows.Forms.Button();
+            this.bttlmuonquahan = new System.Windows.Forms.Button();
+            this.btsoluongmuontheotheloai = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btqltheloai
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thể loại";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btqltheloai.Location = new System.Drawing.Point(12, 12);
+            this.btqltheloai.Name = "btqltheloai";
+            this.btqltheloai.Size = new System.Drawing.Size(183, 46);
+            this.btqltheloai.TabIndex = 0;
+            this.btqltheloai.Text = "Thể loại";
+            this.btqltheloai.UseVisualStyleBackColor = true;
+            this.btqltheloai.Click += new System.EventHandler(this.btqltheloai_Click);
             // 
-            // button2
+            // btqltailieu
             // 
-            this.button2.Location = new System.Drawing.Point(93, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Tài liệu";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btqltailieu.Location = new System.Drawing.Point(12, 64);
+            this.btqltailieu.Name = "btqltailieu";
+            this.btqltailieu.Size = new System.Drawing.Size(183, 42);
+            this.btqltailieu.TabIndex = 1;
+            this.btqltailieu.Text = "Tài liệu";
+            this.btqltailieu.UseVisualStyleBackColor = true;
+            this.btqltailieu.Click += new System.EventHandler(this.btqltailieu_Click);
             // 
-            // button3
+            // btqldoituong
             // 
-            this.button3.Location = new System.Drawing.Point(174, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Đối tượng";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btqldoituong.Location = new System.Drawing.Point(12, 258);
+            this.btqldoituong.Name = "btqldoituong";
+            this.btqldoituong.Size = new System.Drawing.Size(183, 43);
+            this.btqldoituong.TabIndex = 2;
+            this.btqldoituong.Text = "Đối tượng";
+            this.btqldoituong.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btqldocgia
             // 
-            this.button4.Location = new System.Drawing.Point(255, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Độc giả";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btqldocgia.Location = new System.Drawing.Point(12, 211);
+            this.btqldocgia.Name = "btqldocgia";
+            this.btqldocgia.Size = new System.Drawing.Size(183, 41);
+            this.btqldocgia.TabIndex = 3;
+            this.btqldocgia.Text = "Độc giả";
+            this.btqldocgia.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btqlchucvu
             // 
-            this.button5.Location = new System.Drawing.Point(336, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Chức vụ";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btqlchucvu.Location = new System.Drawing.Point(12, 163);
+            this.btqlchucvu.Name = "btqlchucvu";
+            this.btqlchucvu.Size = new System.Drawing.Size(183, 42);
+            this.btqlchucvu.TabIndex = 4;
+            this.btqlchucvu.Text = "Chức vụ";
+            this.btqlchucvu.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btqlnhanvien
             // 
-            this.button6.Location = new System.Drawing.Point(417, 12);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Nhân viên";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btqlnhanvien.Location = new System.Drawing.Point(12, 112);
+            this.btqlnhanvien.Name = "btqlnhanvien";
+            this.btqlnhanvien.Size = new System.Drawing.Size(183, 45);
+            this.btqlnhanvien.TabIndex = 5;
+            this.btqlnhanvien.Text = "Nhân viên";
+            this.btqlnhanvien.UseVisualStyleBackColor = true;
             // 
-            // ntmuonsach
+            // nbqlmuonsach
             // 
-            this.ntmuonsach.Location = new System.Drawing.Point(665, 16);
-            this.ntmuonsach.Name = "ntmuonsach";
-            this.ntmuonsach.Size = new System.Drawing.Size(75, 23);
-            this.ntmuonsach.TabIndex = 7;
-            this.ntmuonsach.Text = "Mượn sách";
-            this.ntmuonsach.UseVisualStyleBackColor = true;
-            this.ntmuonsach.Click += new System.EventHandler(this.ntmuonsach_Click);
+            this.nbqlmuonsach.Location = new System.Drawing.Point(228, 12);
+            this.nbqlmuonsach.Name = "nbqlmuonsach";
+            this.nbqlmuonsach.Size = new System.Drawing.Size(186, 46);
+            this.nbqlmuonsach.TabIndex = 7;
+            this.nbqlmuonsach.Text = "Mượn sách";
+            this.nbqlmuonsach.UseVisualStyleBackColor = true;
+            this.nbqlmuonsach.Click += new System.EventHandler(this.ntmuonsach_Click);
             // 
-            // bttrasach
+            // btqltrasach
             // 
-            this.bttrasach.Location = new System.Drawing.Point(746, 16);
-            this.bttrasach.Name = "bttrasach";
-            this.bttrasach.Size = new System.Drawing.Size(75, 23);
-            this.bttrasach.TabIndex = 8;
-            this.bttrasach.Text = "Trả sách";
-            this.bttrasach.UseVisualStyleBackColor = true;
-            this.bttrasach.Click += new System.EventHandler(this.bttrasach_Click);
+            this.btqltrasach.Location = new System.Drawing.Point(420, 12);
+            this.btqltrasach.Name = "btqltrasach";
+            this.btqltrasach.Size = new System.Drawing.Size(178, 46);
+            this.btqltrasach.TabIndex = 8;
+            this.btqltrasach.Text = "Trả sách";
+            this.btqltrasach.UseVisualStyleBackColor = true;
+            this.btqltrasach.Click += new System.EventHandler(this.bttrasach_Click);
+            // 
+            // bttop10tl
+            // 
+            this.bttop10tl.Location = new System.Drawing.Point(604, 12);
+            this.bttop10tl.Name = "bttop10tl";
+            this.bttop10tl.Size = new System.Drawing.Size(184, 46);
+            this.bttop10tl.TabIndex = 10;
+            this.bttop10tl.Text = "Top 10 TL mượn nhiều";
+            this.bttop10tl.UseVisualStyleBackColor = true;
+            this.bttop10tl.Click += new System.EventHandler(this.bttop10tl_Click);
+            // 
+            // bttlmuonquahan
+            // 
+            this.bttlmuonquahan.Location = new System.Drawing.Point(794, 12);
+            this.bttlmuonquahan.Name = "bttlmuonquahan";
+            this.bttlmuonquahan.Size = new System.Drawing.Size(205, 46);
+            this.bttlmuonquahan.TabIndex = 11;
+            this.bttlmuonquahan.Text = "Tài liệu mượn quá hạn";
+            this.bttlmuonquahan.UseVisualStyleBackColor = true;
+            // 
+            // btsoluongmuontheotheloai
+            // 
+            this.btsoluongmuontheotheloai.Location = new System.Drawing.Point(1005, 12);
+            this.btsoluongmuontheotheloai.Name = "btsoluongmuontheotheloai";
+            this.btsoluongmuontheotheloai.Size = new System.Drawing.Size(191, 46);
+            this.btsoluongmuontheotheloai.TabIndex = 12;
+            this.btsoluongmuontheotheloai.Text = "Số lượng mượn của các thể loại";
+            this.btsoluongmuontheotheloai.UseVisualStyleBackColor = true;
             // 
             // trangChu_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 523);
-            this.Controls.Add(this.bttrasach);
-            this.Controls.Add(this.ntmuonsach);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btsoluongmuontheotheloai);
+            this.Controls.Add(this.bttlmuonquahan);
+            this.Controls.Add(this.bttop10tl);
+            this.Controls.Add(this.btqltrasach);
+            this.Controls.Add(this.nbqlmuonsach);
+            this.Controls.Add(this.btqlnhanvien);
+            this.Controls.Add(this.btqlchucvu);
+            this.Controls.Add(this.btqldocgia);
+            this.Controls.Add(this.btqldoituong);
+            this.Controls.Add(this.btqltailieu);
+            this.Controls.Add(this.btqltheloai);
             this.IsMdiContainer = true;
             this.Name = "trangChu_GUI";
             this.Text = "trangChu_GUI";
@@ -135,13 +171,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button ntmuonsach;
-        private System.Windows.Forms.Button bttrasach;
+        private System.Windows.Forms.Button btqltheloai;
+        private System.Windows.Forms.Button btqltailieu;
+        private System.Windows.Forms.Button btqldoituong;
+        private System.Windows.Forms.Button btqldocgia;
+        private System.Windows.Forms.Button btqlchucvu;
+        private System.Windows.Forms.Button btqlnhanvien;
+        private System.Windows.Forms.Button nbqlmuonsach;
+        private System.Windows.Forms.Button btqltrasach;
+        private System.Windows.Forms.Button bttop10tl;
+        private System.Windows.Forms.Button bttlmuonquahan;
+        private System.Windows.Forms.Button btsoluongmuontheotheloai;
     }
 }

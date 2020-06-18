@@ -79,5 +79,47 @@ namespace QuanLyThuVien_GUI
         {
 
         }
+
+        private void btqltheloai_Click(object sender, EventArgs e)
+        {
+            if (checkformExist("QuanLyTheLoai_GUI"))
+            {
+                activeForm("QuanLyTheLoai_GUI");
+            }
+            else
+            {
+                QuanLyTheLoai_GUI f = new QuanLyTheLoai_GUI();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+        
+        private void bttop10tl_Click(object sender, EventArgs e)
+        {
+            if (checkformExist("ThongKeTop10TaiLieu_GUI"))
+            {
+                activeForm("ThongKeTop10TaiLieu_GUI");
+            }
+            else
+            {
+                ThongKeTop10TaiLieu_GUI f = new ThongKeTop10TaiLieu_GUI();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+        
+        private void btqltailieu_Click(object sender, EventArgs e)
+        {
+            if (checkformExist("QuanLyTaiLieu_GUI"))
+            {
+                activeForm("QuanLyTaiLieu_GUI");
+            }
+            else
+            {
+                QuanLyTaiLieu_GUI f = new QuanLyTaiLieu_GUI();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
     }
-}
+    }

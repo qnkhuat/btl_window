@@ -17,7 +17,7 @@ namespace QuanLyThuVien_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyTaiLieu_GUI());
+            Application.Run(new trangChu_GUI());
             
 
         }

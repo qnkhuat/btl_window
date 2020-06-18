@@ -189,11 +189,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font(".VnClarendonH", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label8.Location = new System.Drawing.Point(263, 24);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(187, 24);
+            this.label8.Size = new System.Drawing.Size(134, 18);
             this.label8.TabIndex = 8;
             this.label8.Text = "Quản Lý Tài Liệu";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -402,6 +402,7 @@
             this.Controls.Add(this.dgvQuanLyTaiLieu);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "QuanLyTaiLieu_GUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyTaiLieu_GUI";
             this.Load += new System.EventHandler(this.QuanLyTaiLieu_GUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyTaiLieu)).EndInit();

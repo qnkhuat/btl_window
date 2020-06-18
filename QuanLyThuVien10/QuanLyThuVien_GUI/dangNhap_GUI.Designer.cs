@@ -28,33 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btdangnhap = new System.Windows.Forms.Button();
+            this.lbtendn = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txttendn = new System.Windows.Forms.TextBox();
+            this.txtmatkhau = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btdangnhap
             // 
-            this.button1.Location = new System.Drawing.Point(179, 207);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Đăng nhập";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btdangnhap.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btdangnhap.Location = new System.Drawing.Point(252, 168);
+            this.btdangnhap.Name = "btdangnhap";
+            this.btdangnhap.Size = new System.Drawing.Size(90, 32);
+            this.btdangnhap.TabIndex = 0;
+            this.btdangnhap.Text = "Đăng nhập";
+            this.btdangnhap.UseVisualStyleBackColor = false;
+            this.btdangnhap.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lbtendn
+            // 
+            this.lbtendn.AutoSize = true;
+            this.lbtendn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtendn.Location = new System.Drawing.Point(82, 65);
+            this.lbtendn.Name = "lbtendn";
+            this.lbtendn.Size = new System.Drawing.Size(107, 19);
+            this.lbtendn.TabIndex = 1;
+            this.lbtendn.Text = "Tên đăng nhập";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(82, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Mật khẩu";
+            // 
+            // txttendn
+            // 
+            this.txttendn.Location = new System.Drawing.Point(195, 64);
+            this.txttendn.Name = "txttendn";
+            this.txttendn.Size = new System.Drawing.Size(275, 20);
+            this.txttendn.TabIndex = 3;
+            // 
+            // txtmatkhau
+            // 
+            this.txtmatkhau.Location = new System.Drawing.Point(195, 100);
+            this.txtmatkhau.Name = "txtmatkhau";
+            this.txtmatkhau.Size = new System.Drawing.Size(275, 20);
+            this.txtmatkhau.TabIndex = 4;
             // 
             // dangNhap_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 261);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ClientSize = new System.Drawing.Size(577, 231);
+            this.Controls.Add(this.txtmatkhau);
+            this.Controls.Add(this.txttendn);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbtendn);
+            this.Controls.Add(this.btdangnhap);
             this.Name = "dangNhap_GUI";
             this.Text = "dangNhap_GUI";
+           
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btdangnhap;
+        private System.Windows.Forms.Label lbtendn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txttendn;
+        private System.Windows.Forms.TextBox txtmatkhau;
     }
 }

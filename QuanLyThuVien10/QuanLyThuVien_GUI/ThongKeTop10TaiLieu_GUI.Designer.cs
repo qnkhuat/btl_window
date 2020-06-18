@@ -211,6 +211,7 @@
             this.Controls.Add(this.btnXuat);
             this.Controls.Add(this.btnTim);
             this.Name = "ThongKeTop10TaiLieu_GUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThongKeTop10TaiLieu_GUI";
             this.Load += new System.EventHandler(this.ThongKeTop10TaiLieu_GUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongKe)).EndInit();

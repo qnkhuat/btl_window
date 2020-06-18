@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyTheLoai_GUI));
             this.dgvQuanLyTheLoai = new System.Windows.Forms.DataGridView();
+            this.maThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,9 +48,6 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTim = new System.Windows.Forms.TextBox();
-            this.maThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -75,6 +75,25 @@
             this.dgvQuanLyTheLoai.TabIndex = 0;
             this.dgvQuanLyTheLoai.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanLyTheLoai_CellContentClick);
             this.dgvQuanLyTheLoai.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanLyTheLoai_RowEnter);
+            // 
+            // maThL
+            // 
+            this.maThL.DataPropertyName = "maThL";
+            this.maThL.HeaderText = "Mã Thể Loại";
+            this.maThL.Name = "maThL";
+            // 
+            // tenThL
+            // 
+            this.tenThL.DataPropertyName = "tenThL";
+            this.tenThL.HeaderText = "Tên Thể Loại";
+            this.tenThL.Name = "tenThL";
+            this.tenThL.Width = 150;
+            // 
+            // ghiChu
+            // 
+            this.ghiChu.DataPropertyName = "ghiChu";
+            this.ghiChu.HeaderText = "Ghi Chú";
+            this.ghiChu.Name = "ghiChu";
             // 
             // label1
             // 
@@ -247,12 +266,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.InfoText;
             this.label4.Location = new System.Drawing.Point(287, 8);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 21);
+            this.label4.Size = new System.Drawing.Size(176, 24);
             this.label4.TabIndex = 15;
             this.label4.Text = "Quản Lý Thể Loại";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,25 +283,6 @@
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(116, 21);
             this.txtTim.TabIndex = 16;
-            // 
-            // maThL
-            // 
-            this.maThL.DataPropertyName = "maThL";
-            this.maThL.HeaderText = "Mã Thể Loại";
-            this.maThL.Name = "maThL";
-            // 
-            // tenThL
-            // 
-            this.tenThL.DataPropertyName = "tenThL";
-            this.tenThL.HeaderText = "Tên Thể Loại";
-            this.tenThL.Name = "tenThL";
-            this.tenThL.Width = 150;
-            // 
-            // ghiChu
-            // 
-            this.ghiChu.DataPropertyName = "ghiChu";
-            this.ghiChu.HeaderText = "Ghi Chú";
-            this.ghiChu.Name = "ghiChu";
             // 
             // panel1
             // 
@@ -350,6 +350,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QuanLyTheLoai_GUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyTheLoai_GUI";
             this.Load += new System.EventHandler(this.QuanLyTheLoai_GUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLyTheLoai)).EndInit();

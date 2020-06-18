@@ -224,6 +224,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "traSach_GUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "traSach_GUI";
             this.ResumeLayout(false);
             this.PerformLayout();
