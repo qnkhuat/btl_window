@@ -121,12 +121,6 @@
     <Compile Include="BAO\ThemTLvaoPM.Designer.cs">
       <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
     </Compile>
-    <Compile Include="BAO\trangChu_GUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BAO\trangChu_GUI.Designer.cs">
-      <DependentUpon>trangChu_GUI.cs</DependentUpon>
-    </Compile>
     <Compile Include="BAO\traSach_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,9 +156,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BAO\ThemTLvaoPM.resx">
       <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BAO\trangChu_GUI.resx">
-      <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BAO\traSach_GUI.resx">
       <DependentUpon>traSach_GUI.cs</DependentUpon>

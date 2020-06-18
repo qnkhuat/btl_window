@@ -224,7 +224,7 @@
             this.maNV,
             this.hotenNV,
             this.ngayMuon});
-            this.viewphieumuon.Location = new System.Drawing.Point(95, 185);
+            this.viewphieumuon.Location = new System.Drawing.Point(83, 182);
             this.viewphieumuon.Name = "viewphieumuon";
             this.viewphieumuon.Size = new System.Drawing.Size(765, 304);
             this.viewphieumuon.TabIndex = 21;
@@ -284,7 +284,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(397, 169);
+            this.label8.Location = new System.Drawing.Point(383, 166);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 13);
             this.label8.TabIndex = 23;
