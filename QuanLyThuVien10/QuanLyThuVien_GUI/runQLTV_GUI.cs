@@ -17,9 +17,7 @@ namespace QuanLyThuVien_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new muonSach_GUI());
-            
-
+            Application.Run(new trangChu_GUI());
         }
     }
 }

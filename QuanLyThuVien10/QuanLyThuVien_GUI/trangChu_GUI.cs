@@ -102,12 +102,18 @@ namespace QuanLyThuVien_GUI
                 btqlnhanvien.Enabled = true;
                 btqltailieu.Enabled = true;
                 btqltheloai.Enabled = true;
-                //true
+                //xoa di nay
+                btsoluongmuontheotheloai.Enabled = true;
+                bttlmuonquahan.Enabled = true;
+                bttop10tl.Enabled = true;
+                btqltrasach.Enabled = true;
+                btqlmuonsach.Enabled = true;
+              /*  //true
                 btsoluongmuontheotheloai.Enabled = false;
                 bttlmuonquahan.Enabled = false;
                 bttop10tl.Enabled = false;
                 btqltrasach.Enabled = false;
-                btqlmuonsach.Enabled = false;
+                btqlmuonsach.Enabled = false;*/
             }
         }
 

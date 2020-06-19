@@ -708,6 +708,7 @@ namespace QuanLyThuVien_GUI
                             dataMuon.deletephieuMuonChiTiet(txtmapm.Text);
                             dataMuon.deletePhieuMuon(txtmapm.Text);
                             MessageBox.Show("Xóa thành công!!!");
+                            loaddata();
                         }
                     }
                     else

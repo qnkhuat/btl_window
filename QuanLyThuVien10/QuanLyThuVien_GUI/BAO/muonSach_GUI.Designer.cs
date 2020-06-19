@@ -337,7 +337,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "muonSach_GUI";
-            this.Text = " ";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " Chỉnh Sửa Phiếu Mượn";
             this.Load += new System.EventHandler(this.muonSach_GUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.viewphieumuon)).EndInit();
             this.ResumeLayout(false);
@@ -375,6 +376,6 @@
         private System.Windows.Forms.Button btsuapmct;
         private System.Windows.Forms.Button btdonpm;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-       // private System.DirectoryServices.DirectoryEntry directoryEntry1;
+      //  private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }

@@ -49,7 +49,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "PrintPM_GUI";
-            this.Text = "PrintPM_GUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Xuất Phiếu Mượn";
             this.ResumeLayout(false);
 
         }

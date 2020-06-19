@@ -36,7 +36,8 @@
             this.tenTL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenThL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soLuongMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongslMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maTL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTim = new System.Windows.Forms.Button();
             this.dtNgayM = new System.Windows.Forms.DateTimePicker();
             this.dtNgayT = new System.Windows.Forms.DateTimePicker();
@@ -79,7 +80,8 @@
             this.tenTL,
             this.tenThL,
             this.ghiChu,
-            this.soLuongMuon});
+            this.tongslMuon,
+            this.maTL});
             this.dgvThongKe.Location = new System.Drawing.Point(3, 0);
             this.dgvThongKe.Name = "dgvThongKe";
             this.dgvThongKe.Size = new System.Drawing.Size(714, 150);
@@ -88,33 +90,59 @@
             // 
             // STT
             // 
+            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.STT.DataPropertyName = "STT";
+            this.STT.FillWeight = 0.8519366F;
             this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 100;
             this.STT.Name = "STT";
             // 
             // tenTL
             // 
+            this.tenTL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.tenTL.DataPropertyName = "tenTL";
+            this.tenTL.FillWeight = 22.84485F;
             this.tenTL.HeaderText = "Tên Tài Liệu";
+            this.tenTL.MinimumWidth = 150;
             this.tenTL.Name = "tenTL";
+            this.tenTL.Width = 150;
             // 
             // tenThL
             // 
+            this.tenThL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.tenThL.DataPropertyName = "tenThL";
+            this.tenThL.FillWeight = 83.39095F;
             this.tenThL.HeaderText = "Tên Thể Loại";
+            this.tenThL.MinimumWidth = 150;
             this.tenThL.Name = "tenThL";
+            this.tenThL.Width = 150;
             // 
             // ghiChu
             // 
+            this.ghiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.ghiChu.DataPropertyName = "ghiChu";
+            this.ghiChu.FillWeight = 112.8701F;
             this.ghiChu.HeaderText = "Ghi Chú";
+            this.ghiChu.MinimumWidth = 100;
             this.ghiChu.Name = "ghiChu";
             // 
-            // soLuongMuon
+            // tongslMuon
             // 
-            this.soLuongMuon.DataPropertyName = "soLuongMuon";
-            this.soLuongMuon.HeaderText = "SL Mượn";
-            this.soLuongMuon.Name = "soLuongMuon";
+            this.tongslMuon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tongslMuon.DataPropertyName = "tongslMuon";
+            this.tongslMuon.FillWeight = 75.47364F;
+            this.tongslMuon.HeaderText = "Số Lượng Mượn";
+            this.tongslMuon.MinimumWidth = 100;
+            this.tongslMuon.Name = "tongslMuon";
+            // 
+            // maTL
+            // 
+            this.maTL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.maTL.DataPropertyName = "maTL";
+            this.maTL.FillWeight = 304.5685F;
+            this.maTL.HeaderText = "Mã Tài Liệu";
+            this.maTL.MinimumWidth = 100;
+            this.maTL.Name = "maTL";
             // 
             // btnTim
             // 
@@ -138,6 +166,7 @@
             this.dtNgayM.Name = "dtNgayM";
             this.dtNgayM.Size = new System.Drawing.Size(200, 20);
             this.dtNgayM.TabIndex = 7;
+            this.dtNgayM.Value = new System.DateTime(1999, 2, 2, 0, 0, 0, 0);
             // 
             // dtNgayT
             // 
@@ -202,8 +231,11 @@
             // 
             // ThongKeTop10TaiLieu_GUI
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(720, 417);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -233,14 +265,15 @@
         private System.Windows.Forms.DateTimePicker dtNgayM;
         private System.Windows.Forms.DateTimePicker dtNgayT;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenTL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenThL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ghiChu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soLuongMuon;
         private System.Windows.Forms.Button btnXuat;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenTL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenThL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghiChu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tongslMuon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maTL;
     }
 }

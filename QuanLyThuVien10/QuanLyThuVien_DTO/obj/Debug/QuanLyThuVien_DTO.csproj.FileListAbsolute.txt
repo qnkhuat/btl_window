@@ -12,3 +12,4 @@ C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.csproj.CoreCompileInputs.cache
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.dll
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.pdb
+C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_DTO\obj\Debug\QuanLyThuVien_DTO.csprojAssemblyReference.cache

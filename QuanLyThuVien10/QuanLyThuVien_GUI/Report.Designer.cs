@@ -48,11 +48,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(234, 59);
+            this.label1.Location = new System.Drawing.Point(243, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(342, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Thống Kê Top 10 Tài Liệu Mượn Nhiều Nhất";
+            this.label1.Text = "THỐNG KÊ TOP 10 TÀI LIỆU ĐƯỢC MƯỢN NHIỀU NHẤT";
             // 
             // ThongKeBindingSource
             // 

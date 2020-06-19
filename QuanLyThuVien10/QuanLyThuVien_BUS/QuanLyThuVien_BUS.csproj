@@ -53,9 +53,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="TaiLieu_BUS.cs" />
-    <Compile Include="TheLoai_BUS.cs" />
-    <Compile Include="ThongKeTop10_BUS.cs" />
+    <Compile Include="NGOC\TaiLieu_BUS.cs" />
+    <Compile Include="NGOC\TheLoai_BUS.cs" />
+    <Compile Include="NGOC\ThongKeTop10_BUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuanLyThuVien_DAL\QuanLyThuVien_DAL.csproj">

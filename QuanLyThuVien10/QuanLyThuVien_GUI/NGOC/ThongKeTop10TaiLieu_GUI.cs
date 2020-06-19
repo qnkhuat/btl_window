@@ -24,14 +24,24 @@ namespace QuanLyThuVien_GUI
         }
         public void LoadData()
         {
-            dt = new DataTable();
-            dt = bus.SearchThongKe(dtNgayM.Value.Date.ToString("yyyy-MM-dd"), dtNgayT.Value.Date.ToString("yyyy-MM-dd"));
-            dgvThongKe.DataSource = dt;
+            /*if (dtNgayM.Value.Equals("2/ 2/1999") || dtNgayT.Value.Equals(DateTime.Now.ToString("yyyy-MM-dd")))
+            {
+                DateTime dat = DateTime.Parse("02/02/1999");
+                MessageBox.Show("Bạn chưa chọn ngày Mượn và ngày Trả! Ứng dụng sẽ xuất tài liệu ra từ đầu đến bây giờ");
+                dt = new DataTable();
+                dt = bus.SearchThongKe(dat.ToString("yyyy-MM-dd"), DateTime.Now.ToString("yyyy-MM-dd"));
+                dgvThongKe.DataSource = dt;
+            }
+            else
+            {*/
+                dt = new DataTable();
+                dt = bus.SearchThongKe(dtNgayM.Value.Date.ToString("yyyy-MM-dd"), dtNgayT.Value.Date.ToString("yyyy-MM-dd"));
+                dgvThongKe.DataSource = dt;
+           // }
         }
 
         private void ThongKeTop10TaiLieu_GUI_Load(object sender, EventArgs e)
         {
-
         }
 
         private void btnTim_Click(object sender, EventArgs e)
@@ -56,9 +66,9 @@ namespace QuanLyThuVien_GUI
                 tk.Sott = dgvThongKe.Rows[i].Cells[0].Value.ToString();
                 tk.Tentailieu = dgvThongKe.Rows[i].Cells[1].Value.ToString();
                 tk.Tentheloai= dgvThongKe.Rows[i].Cells[2].Value.ToString();
-                tk.Ghichu= dgvThongKe.Rows[i].Cells[4].Value.ToString();
-                tk.Slmuon= dgvThongKe.Rows[i].Cells[3].Value.ToString();
-
+                tk.Ghichu= dgvThongKe.Rows[i].Cells[3].Value.ToString();
+                tk.Slmuon= dgvThongKe.Rows[i].Cells[4].Value.ToString();
+                tk.Matl= dgvThongKe.Rows[i].Cells[5].Value.ToString();
                 list.Add(tk);
             }
             rp.Name = "DataSet1";
@@ -73,12 +83,13 @@ namespace QuanLyThuVien_GUI
 
     public class ThongKe
     {
-        string sott, tentailieu, tentheloai, ghichu, slmuon;
+        string sott, tentailieu, tentheloai, ghichu, slmuon,matl;
 
         public string Sott { get => sott; set => sott = value; }
         public string Tentailieu { get => tentailieu; set => tentailieu = value; }
         public string Tentheloai { get => tentheloai; set => tentheloai = value; }
         public string Ghichu { get => ghichu; set => ghichu = value; }
         public string Slmuon { get => slmuon; set => slmuon = value; }
+        public string Matl { get => matl; set => matl = value; }
     }
 }

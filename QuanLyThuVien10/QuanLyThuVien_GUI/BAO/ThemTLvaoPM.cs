@@ -38,7 +38,7 @@ namespace QuanLyThuVien_GUI
             mapm = muonSach_GUI.pm.MaPM;
             load();
         }
-
+        /*
         private void btthoat_Click(object sender, EventArgs e)
         {
             this.Visible = false;
@@ -216,7 +216,7 @@ namespace QuanLyThuVien_GUI
             //    prf.reportViewer1.ReportSource = baocao;
             //    prf.ShowDialog();
         }
-
+        */
         /// /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -322,6 +322,7 @@ namespace QuanLyThuVien_GUI
             }
             else
             {
+                sdr.Read();
                 if (sdr.IsDBNull(3))
                 {
                     DialogResult dlr = MessageBox.Show("Tài liệu mượn chưa trả! Bạn có chắc muốn bỏ tài liệu này khỏi phiếu mượn!",

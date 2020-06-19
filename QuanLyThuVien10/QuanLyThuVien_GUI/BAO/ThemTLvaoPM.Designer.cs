@@ -203,7 +203,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThemTLvaoPM";
-            this.Text = "ThemTLvaoPM";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chỉnh Chi Tiết Phiếu Mượn";
             this.Load += new System.EventHandler(this.ThemTLvaoPM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.view)).EndInit();
             this.ResumeLayout(false);

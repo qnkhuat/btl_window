@@ -111,7 +111,6 @@ C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\Microsoft.Windows.Design.Interaction.xml
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.BAO.qlMatKhau_GUI.resources
-C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.BAO.traSach_GUI.resources
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.muonSach_GUI.resources
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.ThemTLvaoPM.resources
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\AxShockwaveFlashObjects.dll
@@ -133,3 +132,4 @@ C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.BAO.PrintPM_GUI.resources
+C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_GUI\obj\x86\Debug\QuanLyThuVien_GUI.traSach_GUI.resources
