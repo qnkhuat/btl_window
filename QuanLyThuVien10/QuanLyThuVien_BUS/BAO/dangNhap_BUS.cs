@@ -10,9 +10,9 @@ namespace QuanLyThuVien_BUS.BAO
     public class dangNhap_BUS
     {
         Data_DAL dal = new Data_DAL();
-        public SqlDataReader getNhanVien(String x,String y) 
+        public SqlDataReader getNhanVien(String x, String y)
         {
-            SqlDataReader dtr = dal.getData("select * from NhanVien10 where taiKhoan='"+x+"' and matKhau='"+y+"'");
+            SqlDataReader dtr = dal.getData("select * from NhanVien10 where taiKhoan='" + x + "' and matKhau='" + y + "'");
             return dtr;
         }
     }

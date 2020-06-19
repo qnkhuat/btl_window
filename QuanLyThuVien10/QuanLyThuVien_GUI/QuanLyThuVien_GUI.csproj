@@ -76,17 +76,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dangNhap_GUI.cs">
+    <Compile Include="BAO\dangNhap_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dangNhap_GUI.Designer.cs">
+    <Compile Include="BAO\dangNhap_GUI.Designer.cs">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="muonSach_GUI.cs">
+    <Compile Include="BAO\qlMatKhau_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="muonSach_GUI.Designer.cs">
-      <DependentUpon>muonSach_GUI.cs</DependentUpon>
+    <Compile Include="BAO\qlMatKhau_GUI.Designer.cs">
+      <DependentUpon>qlMatKhau_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyTaiLieu_GUI.cs">
@@ -120,17 +120,11 @@
     <Compile Include="trangChu_GUI.Designer.cs">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="traSach_GUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="traSach_GUI.Designer.cs">
-      <DependentUpon>traSach_GUI.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="dangNhap_GUI.resx">
+    <EmbeddedResource Include="BAO\dangNhap_GUI.resx">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="muonSach_GUI.resx">
-      <DependentUpon>muonSach_GUI.cs</DependentUpon>
+    <EmbeddedResource Include="BAO\qlMatKhau_GUI.resx">
+      <DependentUpon>qlMatKhau_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -157,9 +151,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="trangChu_GUI.resx">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="traSach_GUI.resx">
-      <DependentUpon>traSach_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />

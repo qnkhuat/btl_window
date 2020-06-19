@@ -34,11 +34,13 @@
             this.btqldocgia = new System.Windows.Forms.Button();
             this.btqlchucvu = new System.Windows.Forms.Button();
             this.btqlnhanvien = new System.Windows.Forms.Button();
-            this.nbqlmuonsach = new System.Windows.Forms.Button();
+            this.btqlmuonsach = new System.Windows.Forms.Button();
             this.btqltrasach = new System.Windows.Forms.Button();
             this.bttop10tl = new System.Windows.Forms.Button();
             this.bttlmuonquahan = new System.Windows.Forms.Button();
             this.btsoluongmuontheotheloai = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btdangxuat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btqltheloai
@@ -97,15 +99,14 @@
             this.btqlnhanvien.Text = "Nhân viên";
             this.btqlnhanvien.UseVisualStyleBackColor = true;
             // 
-            // nbqlmuonsach
+            // btqlmuonsach
             // 
-            this.nbqlmuonsach.Location = new System.Drawing.Point(228, 12);
-            this.nbqlmuonsach.Name = "nbqlmuonsach";
-            this.nbqlmuonsach.Size = new System.Drawing.Size(186, 46);
-            this.nbqlmuonsach.TabIndex = 7;
-            this.nbqlmuonsach.Text = "Mượn sách";
-            this.nbqlmuonsach.UseVisualStyleBackColor = true;
-            this.nbqlmuonsach.Click += new System.EventHandler(this.ntmuonsach_Click);
+            this.btqlmuonsach.Location = new System.Drawing.Point(228, 12);
+            this.btqlmuonsach.Name = "btqlmuonsach";
+            this.btqlmuonsach.Size = new System.Drawing.Size(186, 46);
+            this.btqlmuonsach.TabIndex = 7;
+            this.btqlmuonsach.Text = "Mượn sách";
+            this.btqlmuonsach.UseVisualStyleBackColor = true;
             // 
             // btqltrasach
             // 
@@ -115,7 +116,6 @@
             this.btqltrasach.TabIndex = 8;
             this.btqltrasach.Text = "Trả sách";
             this.btqltrasach.UseVisualStyleBackColor = true;
-            this.btqltrasach.Click += new System.EventHandler(this.bttrasach_Click);
             // 
             // bttop10tl
             // 
@@ -145,16 +145,38 @@
             this.btsoluongmuontheotheloai.Text = "Số lượng mượn của các thể loại";
             this.btsoluongmuontheotheloai.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(14, 310);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(181, 48);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Quản lý mật khẩu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btdangxuat
+            // 
+            this.btdangxuat.Location = new System.Drawing.Point(16, 368);
+            this.btdangxuat.Name = "btdangxuat";
+            this.btdangxuat.Size = new System.Drawing.Size(179, 45);
+            this.btdangxuat.TabIndex = 16;
+            this.btdangxuat.Text = "Đăng xuất";
+            this.btdangxuat.UseVisualStyleBackColor = true;
+            this.btdangxuat.Click += new System.EventHandler(this.btdangxuat_Click);
+            // 
             // trangChu_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btdangxuat);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btsoluongmuontheotheloai);
             this.Controls.Add(this.bttlmuonquahan);
             this.Controls.Add(this.bttop10tl);
             this.Controls.Add(this.btqltrasach);
-            this.Controls.Add(this.nbqlmuonsach);
+            this.Controls.Add(this.btqlmuonsach);
             this.Controls.Add(this.btqlnhanvien);
             this.Controls.Add(this.btqlchucvu);
             this.Controls.Add(this.btqldocgia);
@@ -177,10 +199,12 @@
         private System.Windows.Forms.Button btqldocgia;
         private System.Windows.Forms.Button btqlchucvu;
         private System.Windows.Forms.Button btqlnhanvien;
-        private System.Windows.Forms.Button nbqlmuonsach;
+        private System.Windows.Forms.Button btqlmuonsach;
         private System.Windows.Forms.Button btqltrasach;
         private System.Windows.Forms.Button bttop10tl;
         private System.Windows.Forms.Button bttlmuonquahan;
         private System.Windows.Forms.Button btsoluongmuontheotheloai;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btdangxuat;
     }
 }

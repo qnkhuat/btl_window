@@ -273,17 +273,17 @@ namespace QuanLyThuVien_DAL
 		
 		private string _maDG;
 		
-		private string _hoTen;
+		private string _hoTenDG;
 		
-		private string _gioiTinh;
+		private System.Nullable<bool> _gioiTinh;
 		
-		private string _ngaySinh;
+		private System.Nullable<System.DateTime> _ngaySinh;
 		
 		private string _maDT;
 		
-		private string _ngayCap;
+		private System.Nullable<System.DateTime> _ngayCap;
 		
-		private string _ngayHetHan;
+		private System.Nullable<System.DateTime> _ngayHetHan;
 		
 		private EntitySet<PhieuMuon10> _PhieuMuon10s;
 		
@@ -295,17 +295,17 @@ namespace QuanLyThuVien_DAL
     partial void OnCreated();
     partial void OnmaDGChanging(string value);
     partial void OnmaDGChanged();
-    partial void OnhoTenChanging(string value);
-    partial void OnhoTenChanged();
-    partial void OngioiTinhChanging(string value);
+    partial void OnhoTenDGChanging(string value);
+    partial void OnhoTenDGChanged();
+    partial void OngioiTinhChanging(System.Nullable<bool> value);
     partial void OngioiTinhChanged();
-    partial void OnngaySinhChanging(string value);
+    partial void OnngaySinhChanging(System.Nullable<System.DateTime> value);
     partial void OnngaySinhChanged();
     partial void OnmaDTChanging(string value);
     partial void OnmaDTChanged();
-    partial void OnngayCapChanging(string value);
+    partial void OnngayCapChanging(System.Nullable<System.DateTime> value);
     partial void OnngayCapChanged();
-    partial void OnngayHetHanChanging(string value);
+    partial void OnngayHetHanChanging(System.Nullable<System.DateTime> value);
     partial void OnngayHetHanChanged();
     #endregion
 		
@@ -336,28 +336,28 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_hoTen", DbType="NVarChar(20)")]
-		public string hoTen
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_hoTenDG", DbType="NVarChar(20)")]
+		public string hoTenDG
 		{
 			get
 			{
-				return this._hoTen;
+				return this._hoTenDG;
 			}
 			set
 			{
-				if ((this._hoTen != value))
+				if ((this._hoTenDG != value))
 				{
-					this.OnhoTenChanging(value);
+					this.OnhoTenDGChanging(value);
 					this.SendPropertyChanging();
-					this._hoTen = value;
-					this.SendPropertyChanged("hoTen");
-					this.OnhoTenChanged();
+					this._hoTenDG = value;
+					this.SendPropertyChanged("hoTenDG");
+					this.OnhoTenDGChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gioiTinh", DbType="NVarChar(10)")]
-		public string gioiTinh
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gioiTinh", DbType="Bit")]
+		public System.Nullable<bool> gioiTinh
 		{
 			get
 			{
@@ -376,8 +376,8 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngaySinh", DbType="NVarChar(20)")]
-		public string ngaySinh
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngaySinh", DbType="Date")]
+		public System.Nullable<System.DateTime> ngaySinh
 		{
 			get
 			{
@@ -420,8 +420,8 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayCap", DbType="NVarChar(20)")]
-		public string ngayCap
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayCap", DbType="Date")]
+		public System.Nullable<System.DateTime> ngayCap
 		{
 			get
 			{
@@ -440,8 +440,8 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayHetHan", DbType="NVarChar(20)")]
-		public string ngayHetHan
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayHetHan", DbType="Date")]
+		public System.Nullable<System.DateTime> ngayHetHan
 		{
 			get
 			{
@@ -662,7 +662,7 @@ namespace QuanLyThuVien_DAL
 		
 		private string _maNV;
 		
-		private string _hoTen;
+		private string _hoTenNV;
 		
 		private string _maCV;
 		
@@ -682,8 +682,8 @@ namespace QuanLyThuVien_DAL
     partial void OnCreated();
     partial void OnmaNVChanging(string value);
     partial void OnmaNVChanged();
-    partial void OnhoTenChanging(string value);
-    partial void OnhoTenChanged();
+    partial void OnhoTenNVChanging(string value);
+    partial void OnhoTenNVChanged();
     partial void OnmaCVChanging(string value);
     partial void OnmaCVChanged();
     partial void OntaiKhoanChanging(string value);
@@ -721,22 +721,22 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_hoTen", DbType="NVarChar(50)")]
-		public string hoTen
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_hoTenNV", DbType="NVarChar(50)")]
+		public string hoTenNV
 		{
 			get
 			{
-				return this._hoTen;
+				return this._hoTenNV;
 			}
 			set
 			{
-				if ((this._hoTen != value))
+				if ((this._hoTenNV != value))
 				{
-					this.OnhoTenChanging(value);
+					this.OnhoTenNVChanging(value);
 					this.SendPropertyChanging();
-					this._hoTen = value;
-					this.SendPropertyChanged("hoTen");
-					this.OnhoTenChanged();
+					this._hoTenNV = value;
+					this.SendPropertyChanged("hoTenNV");
+					this.OnhoTenNVChanged();
 				}
 			}
 		}
@@ -915,7 +915,7 @@ namespace QuanLyThuVien_DAL
 		
 		private string _maDG;
 		
-		private string _ngayMuon;
+		private System.Nullable<System.DateTime> _ngayMuon;
 		
 		private string _maNV;
 		
@@ -933,7 +933,7 @@ namespace QuanLyThuVien_DAL
     partial void OnmaPMChanged();
     partial void OnmaDGChanging(string value);
     partial void OnmaDGChanged();
-    partial void OnngayMuonChanging(string value);
+    partial void OnngayMuonChanging(System.Nullable<System.DateTime> value);
     partial void OnngayMuonChanged();
     partial void OnmaNVChanging(string value);
     partial void OnmaNVChanged();
@@ -991,8 +991,8 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayMuon", DbType="NVarChar(20)")]
-		public string ngayMuon
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayMuon", DbType="Date")]
+		public System.Nullable<System.DateTime> ngayMuon
 		{
 			get
 			{
@@ -1157,11 +1157,11 @@ namespace QuanLyThuVien_DAL
 		
 		private string _maPM;
 		
-		private string _maSach;
+		private string _maTL;
 		
 		private System.Nullable<int> _soLuongMuon;
 		
-		private string _ngayTra;
+		private System.Nullable<System.DateTime> _ngayTra;
 		
 		private EntityRef<PhieuMuon10> _PhieuMuon10;
 		
@@ -1173,11 +1173,11 @@ namespace QuanLyThuVien_DAL
     partial void OnCreated();
     partial void OnmaPMChanging(string value);
     partial void OnmaPMChanged();
-    partial void OnmaSachChanging(string value);
-    partial void OnmaSachChanged();
+    partial void OnmaTLChanging(string value);
+    partial void OnmaTLChanged();
     partial void OnsoLuongMuonChanging(System.Nullable<int> value);
     partial void OnsoLuongMuonChanged();
-    partial void OnngayTraChanging(string value);
+    partial void OnngayTraChanging(System.Nullable<System.DateTime> value);
     partial void OnngayTraChanged();
     #endregion
 		
@@ -1212,26 +1212,26 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maSach", DbType="NVarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string maSach
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_maTL", DbType="NVarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string maTL
 		{
 			get
 			{
-				return this._maSach;
+				return this._maTL;
 			}
 			set
 			{
-				if ((this._maSach != value))
+				if ((this._maTL != value))
 				{
 					if (this._TaiLieu10.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnmaSachChanging(value);
+					this.OnmaTLChanging(value);
 					this.SendPropertyChanging();
-					this._maSach = value;
-					this.SendPropertyChanged("maSach");
-					this.OnmaSachChanged();
+					this._maTL = value;
+					this.SendPropertyChanged("maTL");
+					this.OnmaTLChanged();
 				}
 			}
 		}
@@ -1256,8 +1256,8 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayTra", DbType="NVarChar(20)")]
-		public string ngayTra
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayTra", DbType="Date")]
+		public System.Nullable<System.DateTime> ngayTra
 		{
 			get
 			{
@@ -1310,7 +1310,7 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiLieu10_PhieuMuonChiTiet10", Storage="_TaiLieu10", ThisKey="maSach", OtherKey="maTL", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiLieu10_PhieuMuonChiTiet10", Storage="_TaiLieu10", ThisKey="maTL", OtherKey="maTL", IsForeignKey=true)]
 		public TaiLieu10 TaiLieu10
 		{
 			get
@@ -1333,11 +1333,11 @@ namespace QuanLyThuVien_DAL
 					if ((value != null))
 					{
 						value.PhieuMuonChiTiet10s.Add(this);
-						this._maSach = value.maTL;
+						this._maTL = value.maTL;
 					}
 					else
 					{
-						this._maSach = default(string);
+						this._maTL = default(string);
 					}
 					this.SendPropertyChanged("TaiLieu10");
 				}
@@ -1381,6 +1381,8 @@ namespace QuanLyThuVien_DAL
 		
 		private string _nhaXB;
 		
+		private System.Nullable<int> _namXB;
+		
 		private string _tacGia;
 		
 		private EntitySet<PhieuMuonChiTiet10> _PhieuMuonChiTiet10s;
@@ -1401,6 +1403,8 @@ namespace QuanLyThuVien_DAL
     partial void OnsoLuongChanged();
     partial void OnnhaXBChanging(string value);
     partial void OnnhaXBChanged();
+    partial void OnnamXBChanging(System.Nullable<int> value);
+    partial void OnnamXBChanged();
     partial void OntacGiaChanging(string value);
     partial void OntacGiaChanged();
     #endregion
@@ -1432,7 +1436,7 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tenTL", DbType="NVarChar(20)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tenTL", DbType="NVarChar(40)")]
 		public string tenTL
 		{
 			get
@@ -1516,7 +1520,27 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tacGia", DbType="NVarChar(20)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_namXB", DbType="Int")]
+		public System.Nullable<int> namXB
+		{
+			get
+			{
+				return this._namXB;
+			}
+			set
+			{
+				if ((this._namXB != value))
+				{
+					this.OnnamXBChanging(value);
+					this.SendPropertyChanging();
+					this._namXB = value;
+					this.SendPropertyChanged("namXB");
+					this.OnnamXBChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tacGia", DbType="NVarChar(40)")]
 		public string tacGia
 		{
 			get
@@ -1536,7 +1560,7 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiLieu10_PhieuMuonChiTiet10", Storage="_PhieuMuonChiTiet10s", ThisKey="maTL", OtherKey="maSach")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiLieu10_PhieuMuonChiTiet10", Storage="_PhieuMuonChiTiet10s", ThisKey="maTL", OtherKey="maTL")]
 		public EntitySet<PhieuMuonChiTiet10> PhieuMuonChiTiet10s
 		{
 			get

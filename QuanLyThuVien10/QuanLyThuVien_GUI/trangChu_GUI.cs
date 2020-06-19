@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyThuVien_GUI.BAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,7 @@ namespace QuanLyThuVien_GUI
         {
             InitializeComponent();
         }
-
+        String tendn = dangNhap_GUI.tendn;
 
         //Check form có tồn tại không
         private Boolean checkformExist(String name)
@@ -32,7 +33,6 @@ namespace QuanLyThuVien_GUI
             return check;
         }
 
-
         //Kích hoạt form
         private void activeForm(String name)
         {
@@ -45,9 +45,9 @@ namespace QuanLyThuVien_GUI
                 }
             }
         }
+        
 
-
-        private void ntmuonsach_Click(object sender, EventArgs e)
+     /*   private void ntmuonsach_Click(object sender, EventArgs e)
         {
             if (checkformExist("muonSach_GUI"))
             {
@@ -59,9 +59,9 @@ namespace QuanLyThuVien_GUI
                 ms.MdiParent = this;
                 ms.Show();
             }
-        }
+        }*/
 
-        private void bttrasach_Click(object sender, EventArgs e)
+      /*  private void bttrasach_Click(object sender, EventArgs e)
         {
             if (checkformExist("traSach_GUI"))
             {
@@ -73,11 +73,42 @@ namespace QuanLyThuVien_GUI
                 ts.MdiParent = this;
                 ts.Show();
             }
-        }
+        }*/
 
         private void trangChu_GUI_Load(object sender, EventArgs e)
         {
-
+            if (dangNhap_GUI.loaitk == "admin") 
+            {
+                //fasle
+                btqlchucvu.Enabled = false;
+                btqldocgia.Enabled = false;
+                btqldoituong.Enabled = false;
+                btqlnhanvien.Enabled = false;
+                btqltailieu.Enabled = false;
+                btqltheloai.Enabled = false;
+                //true
+                btsoluongmuontheotheloai.Enabled = true;
+                bttlmuonquahan.Enabled = true;
+                bttop10tl.Enabled = true;
+                btqltrasach.Enabled = true;
+                btqlmuonsach.Enabled = true;
+            }
+            else 
+            {
+                //fasle
+                btqlchucvu.Enabled = true;
+                btqldocgia.Enabled = true;
+                btqldoituong.Enabled = true;
+                btqlnhanvien.Enabled = true;
+                btqltailieu.Enabled = true;
+                btqltheloai.Enabled = true;
+                //true
+                btsoluongmuontheotheloai.Enabled = false;
+                bttlmuonquahan.Enabled = false;
+                bttop10tl.Enabled = false;
+                btqltrasach.Enabled = false;
+                btqlmuonsach.Enabled = false;
+            }
         }
 
         private void btqltheloai_Click(object sender, EventArgs e)
@@ -120,6 +151,28 @@ namespace QuanLyThuVien_GUI
                 f.MdiParent = this;
                 f.Show();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (checkformExist("qlMatKhau_GUI"))
+            {
+                activeForm("qlMatKhau_GUI");
+            }
+            else
+            {
+                qlMatKhau_GUI f = new qlMatKhau_GUI();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btdangxuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            dangNhap_GUI dn = new dangNhap_GUI();
+            dn.txttendn.Text = tendn;
+            dn.ShowDialog();
         }
     }
     }
