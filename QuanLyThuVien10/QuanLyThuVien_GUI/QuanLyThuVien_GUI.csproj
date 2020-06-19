@@ -40,6 +40,11 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -66,6 +71,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,17 +89,40 @@
     <Compile Include="BAO\dangNhap_GUI.Designer.cs">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="BAO\dataPM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataPM.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BAO\muonSach_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BAO\muonSach_GUI.Designer.cs">
       <DependentUpon>muonSach_GUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="BAO\PrintPM_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAO\PrintPM_GUI.Designer.cs">
+      <DependentUpon>PrintPM_GUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="BAO\qlMatKhau_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BAO\qlMatKhau_GUI.Designer.cs">
       <DependentUpon>qlMatKhau_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BAO\rptPM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BAO\ThemTLvaoPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAO\ThemTLvaoPM.Designer.cs">
+      <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
     </Compile>
     <Compile Include="BAO\traSach_GUI.cs">
       <SubType>Form</SubType>
@@ -135,8 +165,24 @@
     <EmbeddedResource Include="BAO\dangNhap_GUI.resx">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BAO\muonSach_GUI.resx">
+      <DependentUpon>muonSach_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAO\PrintPM_GUI.resx">
+      <DependentUpon>PrintPM_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BAO\qlMatKhau_GUI.resx">
       <DependentUpon>qlMatKhau_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAO\rptPM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAO\ThemTLvaoPM.resx">
+      <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BAO\traSach_GUI.resx">
+      <DependentUpon>traSach_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -165,6 +211,17 @@
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="BAO\dataPM.xsc">
+      <DependentUpon>dataPM.xsd</DependentUpon>
+    </None>
+    <None Include="BAO\dataPM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataPM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BAO\dataPM.xss">
+      <DependentUpon>dataPM.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\dangNhap_GUI.datasource" />
     <None Include="Properties\DataSources\muonSach_GUI.datasource" />
@@ -218,6 +275,9 @@
     <Content Include="Resources\see.png" />
     <Content Include="Resources\seen.png" />
     <Content Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
