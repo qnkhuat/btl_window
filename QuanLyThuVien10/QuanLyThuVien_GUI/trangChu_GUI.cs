@@ -174,5 +174,33 @@ namespace QuanLyThuVien_GUI
             dn.txttendn.Text = tendn;
             dn.ShowDialog();
         }
+
+        private void btqlmuonsach_Click(object sender, EventArgs e)
+        {
+            if (checkformExist("muonSach_GUI"))
+            {
+                activeForm("muonSach_GUI");
+            }
+            else
+            {
+                muonSach_GUI f = new muonSach_GUI();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btqltrasach_Click(object sender, EventArgs e)
+        {
+            if (checkformExist("traSach_GUI"))
+            {
+                activeForm("traSach_GUI");
+            }
+            else
+            {
+                traSach_GUI f = new traSach_GUI();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
     }
     }

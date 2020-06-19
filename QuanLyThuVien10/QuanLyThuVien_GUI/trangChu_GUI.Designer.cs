@@ -107,6 +107,7 @@
             this.btqlmuonsach.TabIndex = 7;
             this.btqlmuonsach.Text = "Mượn sách";
             this.btqlmuonsach.UseVisualStyleBackColor = true;
+            this.btqlmuonsach.Click += new System.EventHandler(this.btqlmuonsach_Click);
             // 
             // btqltrasach
             // 
@@ -116,6 +117,7 @@
             this.btqltrasach.TabIndex = 8;
             this.btqltrasach.Text = "Trả sách";
             this.btqltrasach.UseVisualStyleBackColor = true;
+            this.btqltrasach.Click += new System.EventHandler(this.btqltrasach_Click);
             // 
             // bttop10tl
             // 
