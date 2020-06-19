@@ -57,7 +57,7 @@ namespace QuanLyThuVien_DAL
     #endregion
 		
 		public dbQLTVDataContext() : 
-				base(global::QuanLyThuVien_DAL.Properties.Settings.Default.Quan_Ly_Thu_VienConnectionString, mappingSource)
+				base(global::QuanLyThuVien_DAL.Properties.Settings.Default.Quan_Ly_Thu_VienConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -1436,7 +1436,7 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tenTL", DbType="NVarChar(40)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tenTL", DbType="NVarChar(20)")]
 		public string tenTL
 		{
 			get
@@ -1540,7 +1540,7 @@ namespace QuanLyThuVien_DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tacGia", DbType="NVarChar(40)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tacGia", DbType="NVarChar(20)")]
 		public string tacGia
 		{
 			get

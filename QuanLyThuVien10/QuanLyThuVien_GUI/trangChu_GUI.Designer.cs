@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(trangChu_GUI));
             this.btqltheloai = new System.Windows.Forms.Button();
             this.btqltailieu = new System.Windows.Forms.Button();
             this.btqldoituong = new System.Windows.Forms.Button();
@@ -55,6 +56,8 @@
             // 
             // btqltailieu
             // 
+            this.btqltailieu.Image = ((System.Drawing.Image)(resources.GetObject("btqltailieu.Image")));
+            this.btqltailieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btqltailieu.Location = new System.Drawing.Point(12, 64);
             this.btqltailieu.Name = "btqltailieu";
             this.btqltailieu.Size = new System.Drawing.Size(183, 42);
@@ -92,6 +95,8 @@
             // 
             // btqlnhanvien
             // 
+            this.btqlnhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btqlnhanvien.Image")));
+            this.btqlnhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btqlnhanvien.Location = new System.Drawing.Point(12, 112);
             this.btqlnhanvien.Name = "btqlnhanvien";
             this.btqlnhanvien.Size = new System.Drawing.Size(183, 45);

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Quan_Ly_Thu_Vien" Class="dbQLTVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-9O7NFIJ\SQLEXPRESS;Initial Catalog=Quan_Ly_Thu_Vien;Integrated Security=True" SettingsObjectName="QuanLyThuVien_DAL.Properties.Settings" SettingsPropertyName="Quan_Ly_Thu_VienConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ADMIN\SQLEXPRESS;Initial Catalog=Quan_Ly_Thu_Vien;Integrated Security=True" SettingsObjectName="QuanLyThuVien_DAL.Properties.Settings" SettingsPropertyName="Quan_Ly_Thu_VienConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChucVu10" Member="ChucVu10s">
     <Type Name="ChucVu10">
       <Column Name="maCV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -63,12 +63,12 @@
   <Table Name="dbo.TaiLieu10" Member="TaiLieu10s">
     <Type Name="TaiLieu10">
       <Column Name="maTL" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="tenTL" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="tenTL" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="maThL" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="soLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="nhaXB" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="namXB" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="tacGia" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="tacGia" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Association Name="TaiLieu10_PhieuMuonChiTiet10" Member="PhieuMuonChiTiet10s" ThisKey="maTL" OtherKey="maTL" Type="PhieuMuonChiTiet10" />
       <Association Name="TheLoai10_TaiLieu10" Member="TheLoai10" ThisKey="maThL" OtherKey="maThL" Type="TheLoai10" IsForeignKey="true" />
     </Type>
