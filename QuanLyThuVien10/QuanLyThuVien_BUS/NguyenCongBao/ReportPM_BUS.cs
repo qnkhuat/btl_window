@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
-namespace QuanLyThuVien_BUS.BAO
+namespace QuanLyThuVien_BUS.NguyenCongBao
 {
     public class ReportPM_BUS
     {

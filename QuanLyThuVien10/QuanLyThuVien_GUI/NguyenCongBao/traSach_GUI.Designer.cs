@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtmadg = new System.Windows.Forms.TextBox();
             this.view = new System.Windows.Forms.DataGridView();
@@ -46,6 +47,7 @@
             this.txtmaTL = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.lbstatus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.view)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(14, 114);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
@@ -80,6 +83,12 @@
             this.ngayTra});
             this.view.Location = new System.Drawing.Point(65, 185);
             this.view.Name = "view";
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.view.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.view.Size = new System.Drawing.Size(888, 343);
             this.view.TabIndex = 2;
             this.view.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_CellClick_1);
@@ -159,6 +168,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(624, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 13);
@@ -175,6 +185,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(329, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
@@ -200,13 +211,23 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(150, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 21);
+            this.label4.Size = new System.Drawing.Size(94, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "Trả Sách";
+            // 
+            // lbstatus
+            // 
+            this.lbstatus.AutoSize = true;
+            this.lbstatus.Location = new System.Drawing.Point(67, 163);
+            this.lbstatus.Name = "lbstatus";
+            this.lbstatus.Size = new System.Drawing.Size(123, 13);
+            this.lbstatus.TabIndex = 11;
+            this.lbstatus.Text = "                             ";
             // 
             // traSach_GUI
             // 
@@ -214,6 +235,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1037, 540);
+            this.Controls.Add(this.lbstatus);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtmaTL);
             this.Controls.Add(this.label3);
@@ -225,8 +247,9 @@
             this.Controls.Add(this.txtmadg);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Location = new System.Drawing.Point(210, 120);
             this.Name = "traSach_GUI";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Trả Tài Liệu";
             this.Load += new System.EventHandler(this.traSach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.view)).EndInit();
@@ -257,5 +280,6 @@
         private System.Windows.Forms.TextBox txtmaTL;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbstatus;
     }
 }

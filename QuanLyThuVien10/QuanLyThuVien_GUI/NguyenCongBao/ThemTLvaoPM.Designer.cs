@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemTLvaoPM));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtmaTL = new System.Windows.Forms.TextBox();
@@ -53,7 +54,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 68);
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(16, 69);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 16);
@@ -63,6 +66,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(443, 68);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -73,7 +78,7 @@
             // txtmaTL
             // 
             this.txtmaTL.Location = new System.Drawing.Point(120, 68);
-            this.txtmaTL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmaTL.Margin = new System.Windows.Forms.Padding(4);
             this.txtmaTL.Name = "txtmaTL";
             this.txtmaTL.Size = new System.Drawing.Size(258, 22);
             this.txtmaTL.TabIndex = 2;
@@ -82,7 +87,7 @@
             // txtsl
             // 
             this.txtsl.Location = new System.Drawing.Point(531, 68);
-            this.txtsl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtsl.Margin = new System.Windows.Forms.Padding(4);
             this.txtsl.Name = "txtsl";
             this.txtsl.Size = new System.Drawing.Size(286, 22);
             this.txtsl.TabIndex = 3;
@@ -93,8 +98,8 @@
             this.btreset.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btreset.Image = ((System.Drawing.Image)(resources.GetObject("btreset.Image")));
             this.btreset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btreset.Location = new System.Drawing.Point(546, 119);
-            this.btreset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btreset.Location = new System.Drawing.Point(545, 129);
+            this.btreset.Margin = new System.Windows.Forms.Padding(4);
             this.btreset.Name = "btreset";
             this.btreset.Size = new System.Drawing.Size(96, 40);
             this.btreset.TabIndex = 5;
@@ -109,8 +114,8 @@
             this.btbo.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btbo.Image = ((System.Drawing.Image)(resources.GetObject("btbo.Image")));
             this.btbo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btbo.Location = new System.Drawing.Point(410, 119);
-            this.btbo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btbo.Location = new System.Drawing.Point(412, 129);
+            this.btbo.Margin = new System.Windows.Forms.Padding(4);
             this.btbo.Name = "btbo";
             this.btbo.Size = new System.Drawing.Size(85, 40);
             this.btbo.TabIndex = 6;
@@ -125,8 +130,8 @@
             this.btthoat.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btthoat.Image = ((System.Drawing.Image)(resources.GetObject("btthoat.Image")));
             this.btthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btthoat.Location = new System.Drawing.Point(717, 119);
-            this.btthoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btthoat.Location = new System.Drawing.Point(699, 129);
+            this.btthoat.Margin = new System.Windows.Forms.Padding(4);
             this.btthoat.Name = "btthoat";
             this.btthoat.Size = new System.Drawing.Size(100, 40);
             this.btthoat.TabIndex = 7;
@@ -141,8 +146,8 @@
             this.btthem.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btthem.Image = ((System.Drawing.Image)(resources.GetObject("btthem.Image")));
             this.btthem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btthem.Location = new System.Drawing.Point(143, 119);
-            this.btthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btthem.Location = new System.Drawing.Point(144, 129);
+            this.btthem.Margin = new System.Windows.Forms.Padding(4);
             this.btthem.Name = "btthem";
             this.btthem.Size = new System.Drawing.Size(89, 40);
             this.btthem.TabIndex = 10;
@@ -158,9 +163,15 @@
             this.maTL,
             this.tenTL,
             this.soLuongMuon});
-            this.view.Location = new System.Drawing.Point(86, 178);
-            this.view.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.view.Location = new System.Drawing.Point(196, 187);
+            this.view.Margin = new System.Windows.Forms.Padding(4);
             this.view.Name = "view";
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.view.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.view.Size = new System.Drawing.Size(499, 295);
             this.view.TabIndex = 11;
             this.view.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_CellClick_1);
@@ -192,8 +203,8 @@
             this.btsua.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btsua.Image = ((System.Drawing.Image)(resources.GetObject("btsua.Image")));
             this.btsua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btsua.Location = new System.Drawing.Point(278, 119);
-            this.btsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btsua.Location = new System.Drawing.Point(278, 129);
+            this.btsua.Margin = new System.Windows.Forms.Padding(4);
             this.btsua.Name = "btsua";
             this.btsua.Size = new System.Drawing.Size(87, 40);
             this.btsua.TabIndex = 12;
@@ -207,8 +218,8 @@
             this.btIn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btIn.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btIn.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btIn.Location = new System.Drawing.Point(672, 188);
-            this.btIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btIn.Location = new System.Drawing.Point(732, 187);
+            this.btIn.Margin = new System.Windows.Forms.Padding(4);
             this.btIn.Name = "btIn";
             this.btIn.Size = new System.Drawing.Size(67, 58);
             this.btIn.TabIndex = 13;
@@ -219,7 +230,9 @@
             // lbPM
             // 
             this.lbPM.AutoSize = true;
-            this.lbPM.Location = new System.Drawing.Point(11, 85);
+            this.lbPM.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbPM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbPM.Location = new System.Drawing.Point(16, 105);
             this.lbPM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPM.Name = "lbPM";
             this.lbPM.Size = new System.Drawing.Size(88, 16);
@@ -238,8 +251,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(153, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(201, 22);
@@ -266,11 +280,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Location = new System.Drawing.Point(210, 110);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThemTLvaoPM";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Chỉnh Chi Tiết Phiếu Mượn";
             this.Load += new System.EventHandler(this.ThemTLvaoPM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.view)).EndInit();

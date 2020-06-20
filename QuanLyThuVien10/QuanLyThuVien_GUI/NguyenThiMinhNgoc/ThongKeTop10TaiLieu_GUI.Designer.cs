@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongKeTop10TaiLieu_GUI));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(22, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
@@ -64,6 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(378, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
@@ -84,6 +87,11 @@
             this.maTL});
             this.dgvThongKe.Location = new System.Drawing.Point(3, 0);
             this.dgvThongKe.Name = "dgvThongKe";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvThongKe.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvThongKe.Size = new System.Drawing.Size(714, 150);
             this.dgvThongKe.TabIndex = 4;
             this.dgvThongKe.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvThongKe_RowPrePaint);
@@ -152,7 +160,7 @@
             this.btnTim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTim.Location = new System.Drawing.Point(142, 155);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(75, 35);
+            this.btnTim.Size = new System.Drawing.Size(99, 42);
             this.btnTim.TabIndex = 5;
             this.btnTim.Text = "Tìm";
             this.btnTim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

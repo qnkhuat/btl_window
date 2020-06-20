@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuanLyThuVien_GUI.BAO {
+namespace QuanLyThuVien_GUI.NguyenCongBao {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace QuanLyThuVien_GUI.BAO {
         
         public override string FullResourceName {
             get {
-                return "QuanLyThuVien_GUI.BAO.rptPM.rpt";
+                return "QuanLyThuVien_GUI.NguyenCongBao.rptPM.rpt";
             }
             set {
                 // Do nothing

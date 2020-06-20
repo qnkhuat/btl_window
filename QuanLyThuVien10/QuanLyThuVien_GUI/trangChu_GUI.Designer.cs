@@ -46,7 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -218,9 +217,9 @@
             this.btdangxuat.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btdangxuat.Image = ((System.Drawing.Image)(resources.GetObject("btdangxuat.Image")));
             this.btdangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btdangxuat.Location = new System.Drawing.Point(13, 476);
+            this.btdangxuat.Location = new System.Drawing.Point(9, 476);
             this.btdangxuat.Name = "btdangxuat";
-            this.btdangxuat.Size = new System.Drawing.Size(179, 45);
+            this.btdangxuat.Size = new System.Drawing.Size(183, 45);
             this.btdangxuat.TabIndex = 16;
             this.btdangxuat.Text = "Đăng xuất";
             this.btdangxuat.UseVisualStyleBackColor = true;
@@ -233,7 +232,7 @@
             this.panel1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1294, 52);
+            this.panel1.Size = new System.Drawing.Size(1367, 52);
             this.panel1.TabIndex = 18;
             // 
             // label1
@@ -246,7 +245,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(322, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Quản Lý Thu Viện Nhóm 10";
+            this.label1.Text = "Quản Lý Thư Viện Nhóm 10";
             // 
             // panel2
             // 
@@ -261,7 +260,7 @@
             this.panel2.Controls.Add(this.btqldoituong);
             this.panel2.Location = new System.Drawing.Point(3, 53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(214, 539);
+            this.panel2.Size = new System.Drawing.Size(207, 693);
             this.panel2.TabIndex = 19;
             // 
             // panel3
@@ -272,33 +271,26 @@
             this.panel3.Controls.Add(this.bttop10tl);
             this.panel3.Controls.Add(this.btsoluongmuontheotheloai);
             this.panel3.Controls.Add(this.bttlmuonquahan);
-            this.panel3.Location = new System.Drawing.Point(216, 53);
+            this.panel3.Location = new System.Drawing.Point(205, 53);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1081, 70);
+            this.panel3.Size = new System.Drawing.Size(1165, 70);
             this.panel3.TabIndex = 20;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel4.Location = new System.Drawing.Point(216, 112);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1081, 480);
-            this.panel4.TabIndex = 21;
             // 
             // trangChu_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1299, 599);
-            this.Controls.Add(this.panel4);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.IsMdiContainer = true;
             this.Name = "trangChu_GUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "  ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.trangChu_GUI_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -327,6 +319,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
     }
 }

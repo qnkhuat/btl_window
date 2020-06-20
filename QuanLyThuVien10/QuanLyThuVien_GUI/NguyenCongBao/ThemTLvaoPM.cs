@@ -1,8 +1,9 @@
 ﻿using Microsoft.Reporting.WinForms;
 using QuanLyThuVien_BUS;
-using QuanLyThuVien_BUS.BAO;
+using QuanLyThuVien_BUS.NguyenCongBao;
 using QuanLyThuVien_DTO;
 using QuanLyThuVien_GUI.BAO;
+using QuanLyThuVien_GUI.NguyenCongBao;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

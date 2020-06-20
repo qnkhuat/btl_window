@@ -743,8 +743,7 @@ namespace QuanLyThuVien_GUI
                 pm = new phieuMuon(txtmapm.Text, txtmadg.Text, str, txtmanv.Text);
 
                 ThemTLvaoPM ms = new ThemTLvaoPM();
-                ms.MdiParent = this.ParentForm;
-                ms.Show();
+                ms.ShowDialog();
             }
         }
 

@@ -92,7 +92,8 @@
             this.Controls.Add(this.lbtendn);
             this.Controls.Add(this.btdangnhap);
             this.Name = "dangNhap_GUI";
-            this.Text = "dangNhap_GUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ĐĂNG NHẬP";
             this.ResumeLayout(false);
             this.PerformLayout();
 

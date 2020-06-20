@@ -175,10 +175,16 @@ namespace QuanLyThuVien_GUI
 
         private void btdangxuat_Click(object sender, EventArgs e)
         {
-            this.Close();
-            dangNhap_GUI dn = new dangNhap_GUI();
+           
+            /*dangNhap_GUI dn = new dangNhap_GUI();
             dn.txttendn.Text = tendn;
             dn.ShowDialog();
+            this.SetVisibleCore(false);*/
+            dangNhap_GUI dn = new dangNhap_GUI();
+            this.Hide();
+            dn.ShowDialog();
+            this.Show();
+            Application.Exit();
         }
 
         private void btqlmuonsach_Click(object sender, EventArgs e)
