@@ -1,10 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Quan_Ly_Thu_Vien" Class="dbQLTVDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=ADMIN\SQLEXPRESS;Initial Catalog=Quan_Ly_Thu_Vien;Integrated Security=True" SettingsObjectName="QuanLyThuVien_DAL.Properties.Settings" SettingsPropertyName="Quan_Ly_Thu_VienConnectionString1" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.ChucVu10" Member="ChucVu10s">
-    <Type Name="ChucVu10">
-      <Column Name="maCV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="tenCV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Association Name="ChucVu10_NhanVien10" Member="NhanVien10s" ThisKey="maCV" OtherKey="maCV" Type="NhanVien10" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-9O7NFIJ\SQLEXPRESS;Initial Catalog=Quan_Ly_Thu_Vien;Integrated Security=True" SettingsObjectName="QuanLyThuVien_DAL.Properties.Settings" SettingsPropertyName="Quan_Ly_Thu_VienConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TheLoai10" Member="TheLoai10s">
+    <Type Name="TheLoai10">
+      <Column Name="maThL" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenThL" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="TheLoai10_TaiLieu10" Member="TaiLieu10s" ThisKey="maThL" OtherKey="maThL" Type="TaiLieu10" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaiLieu10" Member="TaiLieu10s">
+    <Type Name="TaiLieu10">
+      <Column Name="maTL" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenTL" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="maThL" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="soLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nhaXB" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="namXB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tacGia" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Association Name="TaiLieu10_PhieuMuonChiTiet10" Member="PhieuMuonChiTiet10s" ThisKey="maTL" OtherKey="maTL" Type="PhieuMuonChiTiet10" />
+      <Association Name="TheLoai10_TaiLieu10" Member="TheLoai10" ThisKey="maThL" OtherKey="maThL" Type="TheLoai10" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PhieuMuonChiTiet10" Member="PhieuMuonChiTiet10s">
+    <Type Name="PhieuMuonChiTiet10">
+      <Column Name="maPM" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maTL" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="soLuongMuon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngayTra" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="TaiLieu10_PhieuMuonChiTiet10" Member="TaiLieu10" ThisKey="maTL" OtherKey="maTL" Type="TaiLieu10" IsForeignKey="true" />
+      <Association Name="PhieuMuon10_PhieuMuonChiTiet10" Member="PhieuMuon10" ThisKey="maPM" OtherKey="maPM" Type="PhieuMuon10" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PhieuMuon10" Member="PhieuMuon10s">
+    <Type Name="PhieuMuon10">
+      <Column Name="maPM" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="maDG" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ngayMuon" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="maNV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="PhieuMuon10_PhieuMuonChiTiet10" Member="PhieuMuonChiTiet10s" ThisKey="maPM" OtherKey="maPM" Type="PhieuMuonChiTiet10" />
+      <Association Name="NhanVien10_PhieuMuon10" Member="NhanVien10" ThisKey="maNV" OtherKey="maNV" Type="NhanVien10" IsForeignKey="true" />
+      <Association Name="DocGia10_PhieuMuon10" Member="DocGia10" ThisKey="maDG" OtherKey="maDG" Type="DocGia10" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhanVien10" Member="NhanVien10s">
+    <Type Name="NhanVien10">
+      <Column Name="maNV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hoTenNV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="maCV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="taiKhoan" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="matKhau" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="quyen" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="NhanVien10_PhieuMuon10" Member="PhieuMuon10s" ThisKey="maNV" OtherKey="maNV" Type="PhieuMuon10" />
+      <Association Name="ChucVu10_NhanVien10" Member="ChucVu10" ThisKey="maCV" OtherKey="maCV" Type="ChucVu10" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DoiTuong10" Member="DoiTuong10s">
+    <Type Name="DoiTuong10">
+      <Column Name="maDT" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenDT" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="DoiTuong10_DocGia10" Member="DocGia10s" ThisKey="maDT" OtherKey="maDT" Type="DocGia10" />
     </Type>
   </Table>
   <Table Name="dbo.DocGia10" Member="DocGia10s">
@@ -20,65 +74,11 @@
       <Association Name="DoiTuong10_DocGia10" Member="DoiTuong10" ThisKey="maDT" OtherKey="maDT" Type="DoiTuong10" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.DoiTuong10" Member="DoiTuong10s">
-    <Type Name="DoiTuong10">
-      <Column Name="maDT" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="tenDT" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Association Name="DoiTuong10_DocGia10" Member="DocGia10s" ThisKey="maDT" OtherKey="maDT" Type="DocGia10" />
-    </Type>
-  </Table>
-  <Table Name="dbo.NhanVien10" Member="NhanVien10s">
-    <Type Name="NhanVien10">
-      <Column Name="maNV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="hoTenNV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="maCV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="taiKhoan" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="matKhau" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="quyen" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Association Name="NhanVien10_PhieuMuon10" Member="PhieuMuon10s" ThisKey="maNV" OtherKey="maNV" Type="PhieuMuon10" />
-      <Association Name="ChucVu10_NhanVien10" Member="ChucVu10" ThisKey="maCV" OtherKey="maCV" Type="ChucVu10" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.PhieuMuon10" Member="PhieuMuon10s">
-    <Type Name="PhieuMuon10">
-      <Column Name="maPM" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="maDG" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="ngayMuon" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="maNV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Association Name="PhieuMuon10_PhieuMuonChiTiet10" Member="PhieuMuonChiTiet10s" ThisKey="maPM" OtherKey="maPM" Type="PhieuMuonChiTiet10" />
-      <Association Name="DocGia10_PhieuMuon10" Member="DocGia10" ThisKey="maDG" OtherKey="maDG" Type="DocGia10" IsForeignKey="true" />
-      <Association Name="NhanVien10_PhieuMuon10" Member="NhanVien10" ThisKey="maNV" OtherKey="maNV" Type="NhanVien10" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.PhieuMuonChiTiet10" Member="PhieuMuonChiTiet10s">
-    <Type Name="PhieuMuonChiTiet10">
-      <Column Name="maPM" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="maTL" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="soLuongMuon" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ngayTra" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="PhieuMuon10_PhieuMuonChiTiet10" Member="PhieuMuon10" ThisKey="maPM" OtherKey="maPM" Type="PhieuMuon10" IsForeignKey="true" />
-      <Association Name="TaiLieu10_PhieuMuonChiTiet10" Member="TaiLieu10" ThisKey="maTL" OtherKey="maTL" Type="TaiLieu10" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TaiLieu10" Member="TaiLieu10s">
-    <Type Name="TaiLieu10">
-      <Column Name="maTL" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="tenTL" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="maThL" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="soLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="nhaXB" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="namXB" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="tacGia" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Association Name="TaiLieu10_PhieuMuonChiTiet10" Member="PhieuMuonChiTiet10s" ThisKey="maTL" OtherKey="maTL" Type="PhieuMuonChiTiet10" />
-      <Association Name="TheLoai10_TaiLieu10" Member="TheLoai10" ThisKey="maThL" OtherKey="maThL" Type="TheLoai10" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.TheLoai10" Member="TheLoai10s">
-    <Type Name="TheLoai10">
-      <Column Name="maThL" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="tenThL" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="ghiChu" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Association Name="TheLoai10_TaiLieu10" Member="TaiLieu10s" ThisKey="maThL" OtherKey="maThL" Type="TaiLieu10" />
+  <Table Name="dbo.ChucVu10" Member="ChucVu10s">
+    <Type Name="ChucVu10">
+      <Column Name="maCV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenCV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="ChucVu10_NhanVien10" Member="NhanVien10s" ThisKey="maCV" OtherKey="maCV" Type="NhanVien10" />
     </Type>
   </Table>
 </Database>

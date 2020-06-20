@@ -24,3 +24,4 @@ C:\Users\Admin\Desktop\BTL window 2\btl_window\QuanLyThuVien10\QuanLyThuVien_DAL
 C:\Users\Admin\Desktop\BTL window 2\btl_window\QuanLyThuVien10\QuanLyThuVien_DAL\obj\Debug\QuanLyThuVien_DAL.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\BTL window 2\btl_window\QuanLyThuVien10\QuanLyThuVien_DAL\obj\Debug\QuanLyThuVien_DAL.dll
 C:\Users\Admin\Desktop\BTL window 2\btl_window\QuanLyThuVien10\QuanLyThuVien_DAL\obj\Debug\QuanLyThuVien_DAL.pdb
+C:\Users\vao12\OneDrive\Máy tính\btl_window\QuanLyThuVien10\QuanLyThuVien_DAL\obj\Debug\QuanLyThuVien_DAL.csprojAssemblyReference.cache
