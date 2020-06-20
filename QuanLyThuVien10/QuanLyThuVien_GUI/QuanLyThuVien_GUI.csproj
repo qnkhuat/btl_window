@@ -83,64 +83,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAO\dangNhap_GUI.cs">
+    <Compile Include="NguyenCongBao\dangNhap_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BAO\dangNhap_GUI.Designer.cs">
+    <Compile Include="NguyenCongBao\dangNhap_GUI.Designer.cs">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="BAO\dataPM.Designer.cs">
+    <Compile Include="NguyenCongBao\dataPM.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dataPM.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BAO\muonSach_GUI.cs">
+    <Compile Include="NguyenCongBao\muonSach_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BAO\muonSach_GUI.Designer.cs">
+    <Compile Include="NguyenCongBao\muonSach_GUI.Designer.cs">
       <DependentUpon>muonSach_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="BAO\PrintPM_GUI.cs">
+    <Compile Include="NguyenCongBao\PrintPM_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BAO\PrintPM_GUI.Designer.cs">
+    <Compile Include="NguyenCongBao\PrintPM_GUI.Designer.cs">
       <DependentUpon>PrintPM_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="BAO\qlMatKhau_GUI.cs">
+    <Compile Include="NguyenCongBao\qlMatKhau_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BAO\qlMatKhau_GUI.Designer.cs">
+    <Compile Include="NguyenCongBao\qlMatKhau_GUI.Designer.cs">
       <DependentUpon>qlMatKhau_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="BAO\rptPM.cs">
+    <Compile Include="NguyenCongBao\rptPM.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptPM.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="BAO\ThemTLvaoPM.cs">
+    <Compile Include="NguyenCongBao\ThemTLvaoPM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BAO\ThemTLvaoPM.Designer.cs">
+    <Compile Include="NguyenCongBao\ThemTLvaoPM.Designer.cs">
       <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
     </Compile>
-    <Compile Include="BAO\traSach_GUI.cs">
+    <Compile Include="NguyenCongBao\traSach_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BAO\traSach_GUI.Designer.cs">
+    <Compile Include="NguyenCongBao\traSach_GUI.Designer.cs">
       <DependentUpon>traSach_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NGOC\QuanLyTaiLieu_GUI.cs">
+    <Compile Include="NguyenThiMinhNgoc\QuanLyTaiLieu_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NGOC\QuanLyTaiLieu_GUI.Designer.cs">
+    <Compile Include="NguyenThiMinhNgoc\QuanLyTaiLieu_GUI.Designer.cs">
       <DependentUpon>QuanLyTaiLieu_GUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="NGOC\QuanLyTheLoai_GUI.cs">
+    <Compile Include="NguyenThiMinhNgoc\QuanLyTheLoai_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NGOC\QuanLyTheLoai_GUI.Designer.cs">
+    <Compile Include="NguyenThiMinhNgoc\QuanLyTheLoai_GUI.Designer.cs">
       <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Report.cs">
@@ -150,10 +150,10 @@
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
     <Compile Include="runQLTV_GUI.cs" />
-    <Compile Include="NGOC\ThongKeTop10TaiLieu_GUI.cs">
+    <Compile Include="NguyenThiMinhNgoc\ThongKeTop10TaiLieu_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NGOC\ThongKeTop10TaiLieu_GUI.Designer.cs">
+    <Compile Include="NguyenThiMinhNgoc\ThongKeTop10TaiLieu_GUI.Designer.cs">
       <DependentUpon>ThongKeTop10TaiLieu_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="trangChu_GUI.cs">
@@ -162,26 +162,26 @@
     <Compile Include="trangChu_GUI.Designer.cs">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BAO\dangNhap_GUI.resx">
+    <EmbeddedResource Include="NguyenCongBao\dangNhap_GUI.resx">
       <DependentUpon>dangNhap_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BAO\muonSach_GUI.resx">
+    <EmbeddedResource Include="NguyenCongBao\muonSach_GUI.resx">
       <DependentUpon>muonSach_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BAO\PrintPM_GUI.resx">
+    <EmbeddedResource Include="NguyenCongBao\PrintPM_GUI.resx">
       <DependentUpon>PrintPM_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BAO\qlMatKhau_GUI.resx">
+    <EmbeddedResource Include="NguyenCongBao\qlMatKhau_GUI.resx">
       <DependentUpon>qlMatKhau_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BAO\rptPM.rpt">
+    <EmbeddedResource Include="NguyenCongBao\rptPM.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPM.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="BAO\ThemTLvaoPM.resx">
+    <EmbeddedResource Include="NguyenCongBao\ThemTLvaoPM.resx">
       <DependentUpon>ThemTLvaoPM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BAO\traSach_GUI.resx">
+    <EmbeddedResource Include="NguyenCongBao\traSach_GUI.resx">
       <DependentUpon>traSach_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -194,32 +194,32 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="NGOC\QuanLyTaiLieu_GUI.resx">
+    <EmbeddedResource Include="NguyenThiMinhNgoc\QuanLyTaiLieu_GUI.resx">
       <DependentUpon>QuanLyTaiLieu_GUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NGOC\QuanLyTheLoai_GUI.resx">
+    <EmbeddedResource Include="NguyenThiMinhNgoc\QuanLyTheLoai_GUI.resx">
       <DependentUpon>QuanLyTheLoai_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report.rdlc" />
-    <EmbeddedResource Include="NGOC\ThongKeTop10TaiLieu_GUI.resx">
+    <EmbeddedResource Include="NguyenThiMinhNgoc\ThongKeTop10TaiLieu_GUI.resx">
       <DependentUpon>ThongKeTop10TaiLieu_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="trangChu_GUI.resx">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="BAO\dataPM.xsc">
+    <None Include="NguyenCongBao\dataPM.xsc">
       <DependentUpon>dataPM.xsd</DependentUpon>
     </None>
-    <None Include="BAO\dataPM.xsd">
+    <None Include="NguyenCongBao\dataPM.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dataPM.Designer.cs</LastGenOutput>
     </None>
-    <None Include="BAO\dataPM.xss">
+    <None Include="NguyenCongBao\dataPM.xss">
       <DependentUpon>dataPM.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -266,9 +266,19 @@
     <Content Include="Resources\add.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\book %281%29.png" />
+    <Content Include="Resources\book %282%29.png" />
+    <Content Include="Resources\bookcase.png" />
     <Content Include="Resources\clean.png" />
+    <Content Include="Resources\employee %282%29.png" />
     <Content Include="Resources\exit.png" />
-    <Content Include="Resources\organization.png" />
+    <Content Include="Resources\library.png" />
+    <Content Include="Resources\log-out.png" />
+    <Content Include="Resources\login.png" />
+    <Content Include="Resources\object.png" />
+    <Content Include="Resources\position.png" />
+    <Content Include="Resources\read.png" />
+    <Content Include="Resources\research.png" />
     <Content Include="Resources\reset %281%29.png" />
     <Content Include="Resources\reset %285%29.png" />
     <Content Include="Resources\reset.png" />
