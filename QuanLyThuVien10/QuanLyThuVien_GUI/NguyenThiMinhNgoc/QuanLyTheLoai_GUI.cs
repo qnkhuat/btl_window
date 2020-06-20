@@ -19,6 +19,8 @@ namespace QuanLyThuVien_GUI
         TheLoai_BUS theloai = new TheLoai_BUS();
 
         DataTable dtTheloai, dtTimKiem;
+       
+
 
         public QuanLyTheLoai_GUI()
         {

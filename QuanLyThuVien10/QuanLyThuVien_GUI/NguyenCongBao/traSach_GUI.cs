@@ -21,7 +21,7 @@ namespace QuanLyThuVien_GUI
         TraSach_BUS dataTra = new TraSach_BUS();
         public void load()
         {
-            lbstatus.Text = "      ";
+            label1.Text = "      ";
             txtmadg.Text = "";
             txtslmuon.Text = "";
             txtmaTL.Text = "";
@@ -122,7 +122,7 @@ namespace QuanLyThuVien_GUI
 
         private void txtmadg_TextChanged_1(object sender, EventArgs e)
         {
-            lbstatus.Text = "Các Tài Liệu Mượn Chưa Trả Của Độc Giả Có Mã : " + txtmadg.Text;
+            label1.Text = "Các Tài Liệu Mượn Chưa Trả Của Độc Giả Có Mã : " + txtmadg.Text;
             if (!txtmadg.Text.Equals(""))
             {
                 view.DataSource = dataTra.getphieuMuon_PMChiTietsql(txtmadg.Text);
