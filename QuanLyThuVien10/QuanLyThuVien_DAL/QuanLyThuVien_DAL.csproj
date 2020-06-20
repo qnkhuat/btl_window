@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAO\Data_DAL.cs" />
+    <Compile Include="NguyenCongBao\Data_DAL.cs" />
     <Compile Include="Data_DAL.cs" />
     <Compile Include="dbQLTV.designer.cs">
       <AutoGen>True</AutoGen>

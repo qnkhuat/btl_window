@@ -111,6 +111,7 @@ namespace QuanLyThuVien_GUI
                 {
                     dataTra.updateSoLuongTLtraSach(x);
                     dataTra.updatephieumuonchitiet(x);
+                    MessageBox.Show("Trả Thành Công !!!");
                     load();
                 }
             }
