@@ -149,6 +149,40 @@
     <Compile Include="NguyenThiMinhNgoc\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuangNgoc\QuanLyDoiTuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuangNgoc\QuanLyDoiTuong.Designer.cs">
+      <DependentUpon>QuanLyDoiTuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuangNgoc\QuanLyDocGia_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuangNgoc\QuanLyDocGia_GUI.Designer.cs">
+      <DependentUpon>QuanLyDocGia_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuangNgoc\report1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuangNgoc\report1.Designer.cs">
+      <DependentUpon>report1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuangNgoc\ThongKeTaiLieuQuaHan_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuangNgoc\ThongKeTaiLieuQuaHan_GUI.Designer.cs">
+      <DependentUpon>ThongKeTaiLieuQuaHan_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_Ly_Thu_VienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quan_Ly_Thu_VienDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Quan_Ly_Thu_VienDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quan_Ly_Thu_VienDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="runQLTV_GUI.cs" />
     <Compile Include="NguyenThiMinhNgoc\ThongKeTop10TaiLieu_GUI.cs">
       <SubType>Form</SubType>
@@ -207,6 +241,19 @@
     <EmbeddedResource Include="NguyenThiMinhNgoc\ThongKeTop10TaiLieu_GUI.resx">
       <DependentUpon>ThongKeTop10TaiLieu_GUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuangNgoc\QuanLyDoiTuong.resx">
+      <DependentUpon>QuanLyDoiTuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuangNgoc\QuanLyDocGia_GUI.resx">
+      <DependentUpon>QuanLyDocGia_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuangNgoc\report1.resx">
+      <DependentUpon>report1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuangNgoc\ThongKeTaiLieuQuaHan_GUI.resx">
+      <DependentUpon>ThongKeTaiLieuQuaHan_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuangNgoc\Report1.rdlc" />
     <EmbeddedResource Include="trangChu_GUI.resx">
       <DependentUpon>trangChu_GUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,11 +274,15 @@
     <None Include="Properties\DataSources\muonSach_GUI.datasource" />
     <None Include="Properties\DataSources\QuanLyTaiLieu_GUI.datasource" />
     <None Include="Properties\DataSources\QuanLyTheLoai_GUI.datasource" />
+    <None Include="Properties\DataSources\QuanLyThuVien_BUS.ThongKeQuaHan_BUS.datasource" />
     <None Include="Properties\DataSources\QuanLyThuVien_GUI.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\QuanLyThuVien_GUI.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\QuanLyThuVien_GUI.Quan_Ly_Thu_VienDataSetTableAdapters.DocGia10TableAdapter.datasource" />
     <None Include="Properties\DataSources\Report.datasource" />
+    <None Include="Properties\DataSources\ReportQuaHan.datasource" />
     <None Include="Properties\DataSources\runQLTV_GUI.datasource" />
     <None Include="Properties\DataSources\ThongKe.datasource" />
+    <None Include="Properties\DataSources\ThongKeQuaHan.datasource" />
     <None Include="Properties\DataSources\ThongKeTop10TaiLieu_GUI.datasource" />
     <None Include="Properties\DataSources\trangChu_GUI.datasource" />
     <None Include="Properties\DataSources\traSach_GUI.datasource" />
@@ -260,6 +311,28 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Quan_Ly_Thu_VienDataSet.xsc">
+      <DependentUpon>Quan_Ly_Thu_VienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_Ly_Thu_VienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Quan_Ly_Thu_VienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Quan_Ly_Thu_VienDataSet.xss">
+      <DependentUpon>Quan_Ly_Thu_VienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_Ly_Thu_VienDataSet1.xsc">
+      <DependentUpon>Quan_Ly_Thu_VienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Quan_Ly_Thu_VienDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Quan_Ly_Thu_VienDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Quan_Ly_Thu_VienDataSet1.xss">
+      <DependentUpon>Quan_Ly_Thu_VienDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\timkiem.png" />
   </ItemGroup>
   <ItemGroup>

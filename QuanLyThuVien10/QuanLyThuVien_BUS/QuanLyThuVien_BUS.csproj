@@ -56,6 +56,9 @@
     <Compile Include="NguyenThiMinhNgoc\TaiLieu_BUS.cs" />
     <Compile Include="NguyenThiMinhNgoc\TheLoai_BUS.cs" />
     <Compile Include="NguyenThiMinhNgoc\ThongKeTop10_BUS.cs" />
+    <Compile Include="QuangNgoc\DocGia_BUS.cs" />
+    <Compile Include="QuangNgoc\DoiTuong_BUS.cs" />
+    <Compile Include="QuangNgoc\ThongKeQuaHan_BUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuanLyThuVien_DAL\QuanLyThuVien_DAL.csproj">
