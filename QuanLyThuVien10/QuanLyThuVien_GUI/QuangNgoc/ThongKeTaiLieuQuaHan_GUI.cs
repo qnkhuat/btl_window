@@ -64,9 +64,9 @@ namespace QuanLyThuVien_GUI
             {
                 ThongKeQuaHan tk = new ThongKeQuaHan();
                 tk.Sott = dgvThongKe.Rows[i].Cells[0].Value.ToString();
-                tk.Tentailieu = dgvThongKe.Rows[i].Cells[1].Value.ToString();
-                tk.Tendocgia= dgvThongKe.Rows[i].Cells[2].Value.ToString();
-                tk.Madocgia= dgvThongKe.Rows[i].Cells[3].Value.ToString();
+                tk.Madocgia = dgvThongKe.Rows[i].Cells[1].Value.ToString();
+                tk.Tendocgia = dgvThongKe.Rows[i].Cells[2].Value.ToString();
+                tk.Tentailieu = dgvThongKe.Rows[i].Cells[3].Value.ToString();   
                 tk.Ngaymuon= dgvThongKe.Rows[i].Cells[4].Value.ToString();
                 tk.SongayQH= dgvThongKe.Rows[i].Cells[5].Value.ToString();
                 list.Add(tk);
@@ -74,9 +74,11 @@ namespace QuanLyThuVien_GUI
             rp.Name = "DataSet1";
             rp.Value = list;
             Report rc = new Report();
+            
             rc.reportViewer1.LocalReport.DataSources.Clear();
             rc.reportViewer1.LocalReport.DataSources.Add(rp);
-            rc.reportViewer1.LocalReport.ReportEmbeddedResource = "QuanLyThuVien_GUI.ReportQuaHan.rdlc";
+            rc.reportViewer1.LocalReport.ReportEmbeddedResource = "QuanLyThuVien_GUI.QuangNgoc.Report1.rdlc";
+            rc.reportViewer1.Refresh();
             rc.ShowDialog();
         }
 

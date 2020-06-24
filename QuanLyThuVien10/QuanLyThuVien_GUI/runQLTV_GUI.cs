@@ -18,7 +18,7 @@ namespace QuanLyThuVien_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ThongKeTaiLieuQuaHan_GUI() );
+            Application.Run(new trangChu_GUI());
         }
     }
 }
