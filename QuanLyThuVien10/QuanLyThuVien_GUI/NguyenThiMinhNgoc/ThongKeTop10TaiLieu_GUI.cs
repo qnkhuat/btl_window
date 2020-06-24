@@ -78,7 +78,7 @@ namespace QuanLyThuVien_GUI
             rc.reportViewer1.LocalReport.DataSources.Add(rp);
             rc.reportViewer1.LocalReport.ReportEmbeddedResource = "QuanLyThuVien_GUI.NguyenThiMinhNgoc.Report.rdlc";
             rc.ShowDialog();
-            
+            rc.reportViewer1.Refresh();
         }
     }
 
